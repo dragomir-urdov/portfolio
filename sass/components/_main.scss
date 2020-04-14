@@ -1,0 +1,8 @@
+.main {
+    margin-top: 60px;
+
+    @media (min-width: 960px) {
+        margin-top: 0;
+        margin-left: 60px;
+    }
+}
