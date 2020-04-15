@@ -1,0 +1,25 @@
+.recent {
+    height: 100%;
+    background-color: #000;
+    color: var(--text-color);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading {
+        margin: 1rem;
+    }
+
+    &__projects {
+        margin: 2rem;
+        height: 100%;
+        display: grid;
+        // grid-auto-rows: min-content repeat(3, 1fr);
+        gap: 3rem;
+        justify-items: center;
+        @media (min-width: 850px) and (max-width: 1300px) {
+            grid-auto-flow: column;
+        }
+    }
+}

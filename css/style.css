@@ -15,6 +15,14 @@ body {
   font-family: "Baloo Bhaina 2", cursive;
   line-height: 1.2; }
 
+::-moz-selection {
+  background-color: var(--color-secondary);
+  color: var(--color-primary); }
+
+::selection {
+  background-color: var(--color-secondary);
+  color: var(--color-primary); }
+
 a:link,
 a:visited {
   color: var(--text-color);
@@ -83,6 +91,7 @@ a:active {
   transition: 0.2s ease-in-out; }
   .border-button p {
     color: var(--color-secondary);
+    text-transform: uppercase;
     -webkit-animation: typing 4s steps(12) infinite;
             animation: typing 4s steps(12) infinite;
     overflow: hidden;
@@ -91,6 +100,25 @@ a:active {
   .border-button:hover p {
     -webkit-animation: blink 0.3s infinite;
             animation: blink 0.3s infinite; }
+
+.card {
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden; }
+  .card__image {
+    padding: 1rem; }
+  .card__text {
+    background-color: greenyellow;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    transform: translateY(5rem);
+    transition: all 0.3s ease-out; }
+  .card:hover .card__text {
+    transform: translateY(0); }
 
 .navigation {
   position: fixed;
@@ -254,6 +282,10 @@ a:active {
     .main {
       margin-top: 0;
       margin-left: 60px; } }
+  @media (min-width: 1300px) {
+    .main .grid {
+      display: grid;
+      grid-template-columns: 960px 1fr; } }
 
 .home {
   width: 100%;
@@ -274,7 +306,7 @@ a:active {
         width: 70%; } }
     @media (min-width: 1000px) {
       .home__content {
-        width: 50%; } }
+        width: 80%; } }
   .home__name {
     text-align: center;
     opacity: 0.7; }
@@ -296,6 +328,26 @@ a:active {
     margin-left: 1rem; }
   .code--title, .code--header, .code--button {
     margin-left: 2rem; }
+
+.recent {
+  height: 100%;
+  background-color: #000;
+  color: var(--text-color);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .recent__heading {
+    margin: 1rem; }
+  .recent__projects {
+    margin: 2rem;
+    height: 100%;
+    display: grid;
+    gap: 3rem;
+    justify-items: center; }
+    @media (min-width: 850px) and (max-width: 1300px) {
+      .recent__projects {
+        grid-auto-flow: column; } }
 
 .about {
   width: 100%;

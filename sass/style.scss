@@ -12,6 +12,11 @@ body {
     line-height: 1.2;
 }
 
+::selection {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
 a:link,
 a:visited {
     color: var(--text-color);
@@ -23,8 +28,12 @@ a:active {
     color: var(--color-secondary);
 }
 @import "abstract/animation";
+
 @import "components/buttons";
+@import "components/card";
+
 @import "layout/navigation";
 @import "layout/main";
 @import "layout/home";
+@import "layout/recent";
 @import "layout/about";

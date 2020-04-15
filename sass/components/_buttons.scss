@@ -10,6 +10,7 @@
 
     p {
         color: var(--color-secondary);
+        text-transform: uppercase;
 
         animation: typing 4s steps(12) infinite;
         overflow: hidden;
