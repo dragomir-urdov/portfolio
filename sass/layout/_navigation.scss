@@ -1,12 +1,22 @@
 .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+
     display: flex;
     justify-content: space-between;
+
     transition: all 0.5s ease;
 
     color: var(--text-color);
-    background-color: var(--color-primary);
+    background: var(--linear--primary);
 
     @media (min-width: 960px) {
+        width: 60px;
+        height: 100vh;
         flex-direction: column;
     }
 }
@@ -20,10 +30,6 @@
         margin: 10px;
         width: 40px;
         height: 40px;
-    }
-
-    &:hover {
-        background: var(--color-secondary);
     }
 }
 
@@ -78,9 +84,6 @@
     }
 
     // ANIMATION
-    &--button:hover {
-        background-color: var(--color-secondary);
-    }
     &--button:hover &--icon::before {
         top: -10px;
     }
@@ -92,10 +95,13 @@
         background-color: transparent;
     }
     &--checkbox:checked + &--button &--icon::before {
+        background-color: var(--color-secondary);
+
         top: 0;
         transform: rotate(135deg);
     }
     &--checkbox:checked + &--button &--icon::after {
+        background-color: var(--color-secondary);
         top: 0;
         transform: rotate(-135deg);
     }
@@ -103,7 +109,7 @@
 .nav {
     width: 100%;
     height: 60px;
-    background-color: var(--color-primary);
+    background: var(--linear--primary);
 
     position: fixed;
     top: 60px;
@@ -111,7 +117,6 @@
 
     transform: translateY(-120px);
     opacity: 0;
-    z-index: -1;
 
     display: flex;
     justify-content: space-around;
@@ -122,11 +127,11 @@
     @media (min-width: 540px) {
         position: static;
         justify-content: space-between;
-        width: 210px;
+        width: 300px;
         height: 60px;
-        z-index: 1;
         opacity: 1;
         transform: translateY(0);
+        background: inherit;
     }
 
     @media (min-width: 960px) {
@@ -138,12 +143,45 @@
     }
 
     &__link {
+        position: relative;
+        width: 100%;
+        text-align: center;
         i {
+            // background-color: inherit;
             font-size: 22px;
+            transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        // MAIL ANIMATION
+        .mail-open {
+            display: none;
+        }
+        &:last-child:hover {
+            .mail-open {
+                display: block;
+            }
+            .mail-close {
+                display: none;
+            }
         }
 
         &--text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             display: none;
+
+            text-transform: uppercase;
+        }
+
+        &:hover:not(:last-child) {
+            i {
+                opacity: 0;
+            }
+            .nav__link--text {
+                display: block;
+            }
         }
     }
 }

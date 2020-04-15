@@ -1,20 +1,30 @@
 @import "abstract/variable";
-body {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-a {
+body {
+    font-family: "Baloo Bhaina 2", cursive;
+    line-height: 1.2;
+}
+
+a:link,
+a:visited {
+    color: var(--text-color);
     text-decoration: none;
-    color: inherit;
-
-    &:hover {
-        color: var(--color-secondary);
-    }
 }
 
-@import "layout";
-
-@import "components/navigation";
-@import "components/main";
+a:hover,
+a:active {
+    color: var(--color-secondary);
+}
+@import "abstract/animation";
+@import "components/buttons";
+@import "layout/navigation";
+@import "layout/main";
+@import "layout/home";
+@import "layout/about";

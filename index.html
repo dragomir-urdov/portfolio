@@ -14,11 +14,17 @@
             src="https://kit.fontawesome.com/6f0929a9d6.js"
             crossorigin="anonymous"
         ></script>
+
+        <!-- FONTS -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2|Press+Start+2P&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- NAVIGATION -->
         <div class="navigation">
-            <a href="#" class="logo">
+            <a href="#home" class="logo">
                 <img src="./img/logo.png" alt="logo" />
             </a>
             <input
@@ -30,42 +36,46 @@
                 <span class="mobile__nav--icon"></span>
             </label>
             <nav class="nav">
-                <a href="#" class="nav__link">
+                <a href="#home" class="nav__link">
                     <i class="fas fa-laptop-code"></i>
                     <span class="nav__link--text">Home</span>
                 </a>
-                <a href="#" class="nav__link">
+                <a href="#about" class="nav__link">
                     <i class="fas fa-user-astronaut"></i>
                     <span class="nav__link--text">About</span>
                 </a>
-                <a href="#" class="nav__link">
+                <a href="#skills" class="nav__link">
                     <i class="fas fa-meteor"></i>
                     <span class="nav__link--text">Skills</span>
                 </a>
-                <a href="#" class="nav__link">
+                <a href="#work" class="nav__link">
                     <i class="far fa-eye"></i>
-                    <span class="nav__link--text">Word</span>
+                    <span class="nav__link--text">Work</span>
                 </a>
-                <a href="#" class="nav__link">
-                    <i class="fas fa-envelope"></i>
-                    <!-- <i class="fas fa-envelope-open-text"></i> -->
+                <a href="#contact" class="nav__link">
+                    <i class="fas fa-envelope mail-close"></i>
+                    <i class="fas fa-envelope-open-text mail-open"></i>
                     <span class="nav__link--text">Contact</span>
                 </a>
             </nav>
             <ul class="social-link">
                 <li class="social-link__item">
-                    <a href="https://www.instagram.com/dragomir.urdov/">
+                    <a
+                        href="https://www.instagram.com/dragomir.urdov/"
+                        target="_blank"
+                    >
                         <i class="fab fa-instagram"></i>
                     </a>
                 </li>
                 <li class="social-link__item">
-                    <a href="https://github.com/dragomirurdov">
+                    <a href="https://github.com/dragomirurdov" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
                 <li class="social-link__item">
                     <a
                         href="https://www.linkedin.com/in/dragomir-urdov-bb8570198/"
+                        target="_blank"
                     >
                         <i class="fab fa-linkedin-in"></i>
                     </a>
@@ -74,6 +84,35 @@
         </div>
 
         <!-- MAIN -->
-        <main class="main"></main>
+        <main class="main">
+            <section class="home" id="home">
+                <div class="home__content">
+                    <span class="code code--html">&lt;html&gt;</span>
+                    <span class="code code--head">&lt;head&gt;</span>
+                    <span class="code code--title">&lt;title&gt;</span>
+                    <h3 class="home__name">
+                        <span class="code">&lt;</span>
+                        Dragomir Urdov
+                        <span class="code">&gt;</span>
+                    </h3>
+                    <span class="code code--title">&lt;/title&gt;</span>
+                    <span class="code code--head">&lt;/head&gt;</span>
+                    <span class="code code--body">&lt;body&gt;</span>
+                    <span class="code code--header">&lt;h1&gt;</span>
+                    <h1 class="home__header">
+                        Hi, I am Front-End Developer
+                    </h1>
+                    <span class="code code--header">&lt;/h1&gt;</span>
+                    <span class="code code--button">&lt;button&gt;</span>
+                    <a href="#" class="home__button border-button">
+                        <p>CONTACT ME</p>
+                    </a>
+                    <span class="code code--button">&lt;/button&gt;</span>
+                    <span class="code code--body">&lt;/body&gt;</span>
+                    <span class="code code--html">&lt;/html&gt;</span>
+                </div>
+            </section>
+            <section class="about" id="about"></section>
+        </main>
     </body>
 </html>

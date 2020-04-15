@@ -1,0 +1,22 @@
+.border-button {
+    padding: 0.8rem 2rem;
+
+    color: var(--color-secondary);
+    border: 3px solid var(--color-secondary);
+    border-radius: 50px;
+    outline: none;
+
+    transition: 0.2s ease-in-out;
+
+    p {
+        color: var(--color-secondary);
+
+        animation: typing 4s steps(12) infinite;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: normal;
+    }
+    &:hover p {
+        animation: blink 0.3s infinite;
+    }
+}
