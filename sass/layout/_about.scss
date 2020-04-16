@@ -1,6 +1,115 @@
 .about {
     width: 100%;
-    height: 100vh;
+    max-width: 1000px;
+    margin: 0;
 
-    // background-color: orangered;
+    padding: 4rem 1rem 1rem;
+
+    background: url(../img/airplane-rotated.jpg), #000;
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    @media (min-width: 960px) {
+        padding: 1rem;
+    }
+
+    color: var(--text-color);
+
+    &__content {
+        display: grid;
+        gap: 0.5rem;
+        justify-items: center;
+
+        @media (min-width: 850px) {
+            width: 75%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(4, max-content);
+            align-items: center;
+        }
+
+        &--header {
+            text-align: center;
+            font-size: 3rem;
+            color: var(--color-secondary);
+        }
+
+        &--subheader {
+            // font-family: "Press Start 2P", cursive;
+            // letter-spacing: 0.2rem;
+            // font-size: 1rem;
+            text-align: center;
+            padding: 0.5rem;
+            line-height: 1.5;
+            color: var(--text-color);
+        }
+
+        &--paragraph {
+            font-size: 1.2rem;
+            padding: 1rem 2rem;
+            text-align: center;
+            line-height: 1.5;
+            letter-spacing: 0.1rem;
+            @media (min-width: 850px) {
+                grid-column: 1 / -1;
+                grid-row: 3 / span 1;
+            }
+        }
+
+        &--link {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 0.3rem;
+            font-size: 1.5rem;
+            display: block;
+            &:link,
+            &:visited {
+                color: var(--color-secondary);
+                border-bottom: 5px solid var(--color-secondary);
+            }
+
+            &:hover,
+            &:active {
+                color: var(--color-primary);
+                background-color: var(--color-secondary);
+                border-bottom: 5px solid var(--color-primary);
+            }
+
+            @media (min-width: 850px) {
+                grid-column: 1 / -1;
+                grid-row: 4 / span 1;
+            }
+        }
+
+        &--image {
+            margin: 1rem;
+            width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+            overflow: hidden;
+
+            box-sizing: content-box;
+            border: 0.5rem solid var(--color-secondary);
+            transition: all 0.3s ease-in-out;
+
+            z-index: 2;
+
+            img {
+                width: 100%;
+                transform: translateY(-25%);
+                @media (min-width: 850px) {
+                    transform: translateY(0);
+                }
+                scale: 1.1;
+                z-index: 1;
+            }
+
+            @media (min-width: 850px) {
+                border-radius: 0;
+                height: 20rem;
+                grid-column: 1 / 2;
+                grid-row: 1 / span 2;
+            }
+        }
+    }
 }

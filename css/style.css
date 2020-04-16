@@ -85,6 +85,52 @@ a:active {
   60% {
     color: var(--color-secondary); } }
 
+@-webkit-keyframes jittery {
+  5%,
+  50% {
+    transform: scale(1); }
+  10% {
+    transform: scale(0.9); }
+  15% {
+    transform: scale(1.05); }
+  20% {
+    transform: scale(1.05) rotate(-5deg); }
+  25% {
+    transform: scale(1.05) rotate(5deg); }
+  30% {
+    transform: scale(1.05) rotate(-3deg); }
+  35% {
+    transform: scale(1.05) rotate(2deg); }
+  40% {
+    transform: scale(1.05) rotate(0); } }
+
+@keyframes jittery {
+  5%,
+  50% {
+    transform: scale(1); }
+  10% {
+    transform: scale(0.9); }
+  15% {
+    transform: scale(1.05); }
+  20% {
+    transform: scale(1.05) rotate(-5deg); }
+  25% {
+    transform: scale(1.05) rotate(5deg); }
+  30% {
+    transform: scale(1.05) rotate(-3deg); }
+  35% {
+    transform: scale(1.05) rotate(2deg); }
+  40% {
+    transform: scale(1.05) rotate(0); } }
+
+@-webkit-keyframes heartbeat {
+  50% {
+    transform: scale(1.1); } }
+
+@keyframes heartbeat {
+  50% {
+    transform: scale(1.1); } }
+
 .border-button {
   padding: 0.8rem 2rem;
   color: var(--color-secondary);
@@ -287,42 +333,37 @@ a:active {
   align-items: center; }
   @media (min-width: 960px) {
     .main {
-      width: 100%;
       margin-top: 0;
       margin-left: 60px; } }
 
 .home {
   width: 100%;
+  max-width: 1000px;
   padding: 1rem;
   color: var(--text-color);
-  background: url(../img/airplane.jpg), #111214;
+  background: url(../img/airplane.jpg), #000;
   background-size: contain;
-  background-position: bottom left;
+  background-position: bottom right;
   background-repeat: no-repeat; }
   @media (min-width: 960px) {
     .home {
-      height: 100vh;
-      padding: 4rem; } }
-  @media (min-width: 1300px) {
-    .home {
-      width: 1000px;
-      background-position: center left; } }
+      padding: 1rem; } }
   .home__content {
     display: grid;
     gap: 0.5rem; }
     @media (min-width: 850px) {
       .home__content {
-        width: 70%; } }
-    @media (min-width: 1000px) {
-      .home__content {
         width: 80%; } }
-  .home__name {
-    text-align: center;
-    opacity: 0.7; }
-  .home__header {
+  .home__header--h1 {
     text-align: center;
     font-size: 4rem;
-    color: var(--color-secondary); }
+    color: var(--color-secondary);
+    -webkit-animation: jittery 4s infinite;
+            animation: jittery 4s infinite; }
+  .home__header--h2 {
+    text-align: center;
+    opacity: 0.7;
+    padding: 0.5rem; }
   .home__button {
     display: block;
     justify-self: center;
@@ -333,11 +374,107 @@ a:active {
   font-size: 0.5rem;
   line-height: 2;
   opacity: 0.5; }
-  .code--head, .code--body {
+  .code--tab--1 {
     margin-left: 1rem; }
-  .code--title, .code--header, .code--button {
+  .code--tab--2 {
     margin-left: 2rem; }
 
 .about {
   width: 100%;
-  height: 100vh; }
+  max-width: 1000px;
+  margin: 0;
+  padding: 4rem 1rem 1rem;
+  background: url(../img/airplane-rotated.jpg), #000;
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+  color: var(--text-color); }
+  @media (min-width: 960px) {
+    .about {
+      padding: 1rem; } }
+  .about__content {
+    display: grid;
+    gap: 0.5rem;
+    justify-items: center; }
+    @media (min-width: 850px) {
+      .about__content {
+        width: 75%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, -webkit-max-content);
+        grid-template-rows: repeat(4, max-content);
+        align-items: center; } }
+    .about__content--header {
+      text-align: center;
+      font-size: 3rem;
+      color: var(--color-secondary); }
+    .about__content--subheader {
+      text-align: center;
+      padding: 0.5rem;
+      line-height: 1.5;
+      color: var(--text-color); }
+    .about__content--paragraph {
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+      text-align: center;
+      line-height: 1.5;
+      letter-spacing: 0.1rem; }
+      @media (min-width: 850px) {
+        .about__content--paragraph {
+          grid-column: 1 / -1;
+          grid-row: 3 / span 1; } }
+    .about__content--link {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding: 0.3rem;
+      font-size: 1.5rem;
+      display: block; }
+      .about__content--link:link, .about__content--link:visited {
+        color: var(--color-secondary);
+        border-bottom: 5px solid var(--color-secondary); }
+      .about__content--link:hover, .about__content--link:active {
+        color: var(--color-primary);
+        background-color: var(--color-secondary);
+        border-bottom: 5px solid var(--color-primary); }
+      @media (min-width: 850px) {
+        .about__content--link {
+          grid-column: 1 / -1;
+          grid-row: 4 / span 1; } }
+    .about__content--image {
+      margin: 1rem;
+      width: 15rem;
+      height: 15rem;
+      border-radius: 50%;
+      overflow: hidden;
+      box-sizing: content-box;
+      border: 0.5rem solid var(--color-secondary);
+      transition: all 0.3s ease-in-out;
+      z-index: 2; }
+      .about__content--image img {
+        width: 100%;
+        transform: translateY(-25%);
+        scale: 1.1;
+        z-index: 1; }
+        @media (min-width: 850px) {
+          .about__content--image img {
+            transform: translateY(0); } }
+      @media (min-width: 850px) {
+        .about__content--image {
+          border-radius: 0;
+          height: 20rem;
+          grid-column: 1 / 2;
+          grid-row: 1 / span 2; } }
+
+.skills {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff; }
+
+.work {
+  width: 100%;
+  min-height: 100vh;
+  background-color: peachpuff; }
+
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  background-color: orangered; }
