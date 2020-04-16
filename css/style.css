@@ -13,7 +13,10 @@
 
 body {
   font-family: "Baloo Bhaina 2", cursive;
-  line-height: 1.2; }
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  background-color: #000; }
 
 ::-moz-selection {
   background-color: var(--color-secondary);
@@ -104,7 +107,8 @@ a:active {
 .card {
   position: relative;
   border-radius: 50px;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 200px; }
   .card__image {
     padding: 1rem; }
   .card__text {
@@ -277,15 +281,15 @@ a:active {
       height: 100px; } }
 
 .main {
-  margin-top: 60px; }
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   @media (min-width: 960px) {
     .main {
+      width: 100%;
       margin-top: 0;
       margin-left: 60px; } }
-  @media (min-width: 1300px) {
-    .main .grid {
-      display: grid;
-      grid-template-columns: 960px 1fr; } }
 
 .home {
   width: 100%;
@@ -295,9 +299,14 @@ a:active {
   background-size: contain;
   background-position: bottom left;
   background-repeat: no-repeat; }
-  @media (min-width: 850px) {
+  @media (min-width: 960px) {
     .home {
+      height: 100vh;
       padding: 4rem; } }
+  @media (min-width: 1300px) {
+    .home {
+      width: 1000px;
+      background-position: center left; } }
   .home__content {
     display: grid;
     gap: 0.5rem; }
@@ -329,27 +338,6 @@ a:active {
   .code--title, .code--header, .code--button {
     margin-left: 2rem; }
 
-.recent {
-  height: 100%;
-  background-color: #000;
-  color: var(--text-color);
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .recent__heading {
-    margin: 1rem; }
-  .recent__projects {
-    margin: 2rem;
-    height: 100%;
-    display: grid;
-    gap: 3rem;
-    justify-items: center; }
-    @media (min-width: 850px) and (max-width: 1300px) {
-      .recent__projects {
-        grid-auto-flow: column; } }
-
 .about {
   width: 100%;
-  height: 100vh;
-  background-color: orangered; }
+  height: 100vh; }

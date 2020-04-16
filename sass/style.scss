@@ -10,6 +10,9 @@
 body {
     font-family: "Baloo Bhaina 2", cursive;
     line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
 }
 
 ::selection {
@@ -35,5 +38,4 @@ a:active {
 @import "layout/navigation";
 @import "layout/main";
 @import "layout/home";
-@import "layout/recent";
 @import "layout/about";
