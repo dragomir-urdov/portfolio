@@ -10,9 +10,9 @@
 body {
     font-family: "Baloo Bhaina 2", cursive;
     line-height: 1.2;
-    display: flex;
-    justify-content: center;
-    background-color: #000;
+    overflow-x: hidden; //because animation
+
+    background-color: #0c0d11;
 }
 
 ::selection {
@@ -30,6 +30,8 @@ a:hover,
 a:active {
     color: var(--color-secondary);
 }
+
+@import "abstract/mixin";
 @import "abstract/animation";
 
 @import "components/buttons";
