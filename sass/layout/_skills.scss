@@ -1,136 +1,77 @@
 .skills {
+    color: var(--text-color);
+    padding: 1rem;
     width: 100%;
-    min-height: 100vh;
-    background-color: #fff;
-    padding: 2rem 0;
-    position: relative;
-    overflow: hidden;
+    // background: linear-gradient(to bottom, transparent 50%, white 50%);
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    @media (min-width: 960px) {
-        display: flex;
-        justify-content: center;
+    &__header {
+        font-size: 3rem;
+        margin: 3rem;
+        text-transform: uppercase;
+        // width: 70%;
+        text-align: center;
+        letter-spacing: 1rem;
+        color: rgb(0, 107, 194);
     }
 
     &__content {
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        z-index: 1;
-
-        @media (min-width: 960px) {
-            width: 1000px;
-        }
-
-        & > * {
-            width: 90%;
-        }
-
-        &--header {
-            width: 70%;
-            font-size: 3rem;
-            color: #007cd7;
+        background: rgb(0, 107, 194);
+        border-radius: 1rem;
+        @media (min-width: 540px) {
+            display: flex;
+            flex-direction: row;
         }
     }
 
     &__category {
-        margin: 1rem;
-        padding: 0.5rem;
-        &--title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+
+        &:nth-child(2) {
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+
+            @media (min-width: 540px) {
+                border-top: none;
+                border-bottom: none;
+                border-left: 3px solid black;
+                border-right: 3px solid black;
+            }
+        }
+
+        &--header {
+            margin: 1rem 0;
+            color: var(--color-secondary);
+            letter-spacing: 0.5rem;
+            text-shadow: 0.1rem 0.1rem 0.5rem black;
+        }
+
+        &--subheader {
+            margin: 1rem 0;
+            color: var(--color-secondary);
+            letter-spacing: 0.3rem;
+            text-shadow: 0.1rem 0.1rem 0.5rem black;
+        }
+
+        &--icon {
+            font-size: 2rem;
             margin: 1rem;
-            color: #007cd7;
-            border-bottom: 2px solid #007cd7;
-        }
-    }
-}
-
-.skill__item {
-    display: grid;
-    grid-template-columns: 35% 60%;
-    gap: 5%;
-
-    margin: 0.5rem 0;
-
-    &--level {
-        border: 2px solid var(--color-primary);
-        border-radius: 10px;
-        position: relative;
-        background-color: var(--color-primary);
-
-        &::before {
-            position: absolute;
-            top: 0;
-            left: 0;
+            color: var(--color-secondary);
         }
 
-        &::after {
-            position: absolute;
-            color: var(--text-color);
-        }
-    }
-    .level {
-        &--html {
-            @include level(90%, "90%");
-        }
-        &--css {
-            @include level(75%, "75%");
+        &--paragraph {
+            margin: 1rem 0;
         }
 
-        &--php {
-            @include level(10%, "10%");
-        }
+        &--list {
+            list-style: none;
 
-        &--npm {
-            @include level(10%, "10%");
-        }
-        &--sql {
-            @include level(50%, "50%");
-        }
-        &--firebase {
-            @include level(20%, "20%");
-        }
-        &--java {
-            @include level(70%, "70%");
-        }
-        &--kotlin {
-            @include level(60%, "60%");
-        }
-        &--jetpack {
-            @include level(50%, "50%");
-        }
-        &--git {
-            @include level(45%, "45%");
-        }
-        &--terminal {
-            @include level(30%, "30");
-        }
-        &--figma {
-            @include level(90%, "90%");
-        }
-        &--jetbrains {
-            @include level(90%, "90%");
-        }
-        &--json {
-            @include level(100%, "100%");
-        }
-        &--gulp {
-            @include level(10%, "10%");
-        }
-        &--bootstrap,
-        &--js,
-        &--electron,
-        &--node {
-            @include level();
+            li:not(:last-child) {
+                margin: 1rem 0;
+            }
         }
     }
 }

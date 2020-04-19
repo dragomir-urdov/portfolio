@@ -24,7 +24,7 @@
     <body>
         <!-- NAVIGATION -->
         <div class="navigation">
-            <a href="#home" class="logo">
+            <a href="index.html#home" class="logo">
                 <img src="./img/logo.png" alt="logo" />
             </a>
             <input
@@ -36,23 +36,27 @@
                 <span class="mobile__nav--icon"></span>
             </label>
             <nav class="nav">
-                <a href="#home" class="nav__link">
+                <a href="index.html#home" class="nav__link">
                     <i class="fas fa-laptop-code"></i>
                     <span class="nav__link--text">Home</span>
                 </a>
-                <a href="#about" class="nav__link">
+                <a href="index.html#about" class="nav__link">
                     <i class="fas fa-user-astronaut"></i>
                     <span class="nav__link--text">About</span>
                 </a>
-                <a href="#skills" class="nav__link">
+                <a href="skills.html#skills" class="nav__link">
                     <i class="fas fa-meteor"></i>
                     <span class="nav__link--text">Skills</span>
                 </a>
-                <a href="#work" class="nav__link">
+                <a href="skills.html#work" class="nav__link">
                     <i class="far fa-eye"></i>
                     <span class="nav__link--text">Work</span>
                 </a>
-                <a href="#contact" class="nav__link" title="Contact me">
+                <a
+                    href="contact.html#contact"
+                    class="nav__link"
+                    title="Contact me"
+                >
                     <i class="fas fa-envelope mail-close"></i>
                     <i class="fas fa-envelope-open-text mail-open"></i>
                     <span class="nav__link--text">Contact</span>
@@ -86,7 +90,7 @@
         <!-- MAIN -->
         <main class="main">
             <section class="home" id="home">
-                <div class="home__content">
+                <div class="home__content content">
                     <span class="code">&lt;html&gt;</span>
                     <span class="code code--tab--1">&lt;head&gt;</span>
                     <span class="code code--tab--2">&lt;title&gt;</span>
@@ -111,7 +115,10 @@
                     </h2>
                     <span class="code code--tab--2">&lt;/h2&gt;</span>
                     <span class="code code--tab--2">&lt;button&gt;</span>
-                    <a href="#" class="home__button border-button">
+                    <a
+                        href="contact.html#contact"
+                        class="home__button border-button"
+                    >
                         <p>Contact me</p>
                     </a>
                     <span class="code code--tab--2">&lt;/button&gt;</span>
@@ -119,9 +126,8 @@
                     <span class="code">&lt;/html&gt;</span>
                 </div>
             </section>
-            <!-- <hr /> -->
             <section class="about" id="about">
-                <div class="about__content">
+                <div class="about__content content">
                     <h1 class="about__content--header">
                         I am Dragomir Urdov
                     </h1>
@@ -143,130 +149,12 @@
                     </p>
                     <a
                         href="https://github.com/dragomirurdov?tab=repositories"
-                        class="about__content--link"
+                        class="about__content--link git__button"
                         target="_blank"
                     >
-                        See my Projects on GitHub &rAarr;
+                        See my Projects on GitHub
                     </a>
                 </div>
-            </section>
-            <section class="skills" id="skills">
-                <div class="skills__content">
-                    <h1 class="skills__content--header">My Skills</h1>
-                    <div class="skills__category">
-                        <h2 class="skills__category--title">Front-End</h2>
-                        <div class="skill__item">
-                            <p class="skill__item--title">HTML5</p>
-                            <div class="skill__item--level level--html"></div>
-                        </div>
-                        <div class="skill__item">
-                            <p class="skill__item--title">CSS3 / Sass</p>
-                            <div class="skill__item--level level--css"></div>
-                        </div>
-                        <div class="skill__item">
-                            <p class="skill__item--title">Bootstrap</p>
-                            <div
-                                class="skill__item--level level--bootstrap"
-                            ></div>
-                        </div>
-                        <div class="skill__item">
-                            <p class="skill__item--title">Java Script</p>
-                            <div class="skill__item--level level--js"></div>
-                        </div>
-                        <div class="skill__item">
-                            <p class="skill__item--title">Electron</p>
-                            <div
-                                class="skill__item--level level--electron"
-                            ></div>
-                        </div>
-                    </div>
-                    <div class="skills__category">
-                        <h2 class="skills__category--title">Back-End</h2>
-                        <div class="skill__item">
-                            <p class="skill__item--title">PHP</p>
-                            <div class="skill__item--level level--php"></div>
-                        </div>
-                        <div class="skill__item">
-                            <p class="skill__item--title">Node JS</p>
-                            <div class="skill__item--level level--node"></div>
-                        </div>
-                        <div class="skill__item">
-                            <p class="skill__item--title">NPM</p>
-                            <div class="skill__item--level level--npm"></div>
-                        </div>
-
-                        <div class="skill__item">
-                            <p class="skill__item--title">MySQL</p>
-                            <div class="skill__item--level level--sql"></div>
-                        </div>
-                        <div class="skill__item">
-                            <p class="skill__item--title">Firebase</p>
-                            <div
-                                class="skill__item--level level--firebase"
-                            ></div>
-                        </div>
-                    </div>
-                    <div class="skills__category">
-                        <h2 class="skills__category--title">Android</h2>
-                        <div class="skill__item">
-                            <p class="skill__item--title">Java</p>
-                            <div class="skill__item--level level--java"></div>
-                        </div>
-                        <div class="skill__item">
-                            <p class="skill__item--title">Kotlin</p>
-                            <div class="skill__item--level level--kotlin"></div>
-                        </div>
-                        <div class="skill__item">
-                            <p class="skill__item--title">Jetpack</p>
-                            <div
-                                class="skill__item--level level--jetpack"
-                            ></div>
-                        </div>
-                        <div class="skill__item">
-                            <p class="skill__item--title">Gradle</p>
-                            <div
-                                class="skill__item--level level--jetpack"
-                            ></div>
-                        </div>
-                    </div>
-                    <div class="skills__category">
-                        <h2 class="skills__category--title">General Skills</h2>
-                        <div class="skill__item">
-                            <p class="skill__item--title">Git</p>
-                            <div class="skill__item--level level--git"></div>
-                        </div>
-                        <div class="skill__item">
-                            <p class="skill__item--title">Terminal</p>
-                            <div
-                                class="skill__item--level level--terminal"
-                            ></div>
-                        </div>
-                        <div class="skill__item">
-                            <p class="skill__item--title">Figma</p>
-                            <div class="skill__item--level level--figma"></div>
-                        </div>
-                        <div class="skill__item">
-                            <p class="skill__item--title">JetBrains IDEs</p>
-                            <div
-                                class="skill__item--level level--jetbrains"
-                            ></div>
-                        </div>
-                        <div class="skill__item">
-                            <p class="skill__item--title">JSON / XML</p>
-                            <div class="skill__item--level level--json"></div>
-                        </div>
-                        <div class="skill__item">
-                            <p class="skill__item--title">Gulp.js</p>
-                            <div class="skill__item--level level--gulp"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="work">
-                WORK
-            </section>
-            <section class="contact">
-                CONTACT ME
             </section>
         </main>
     </body>
