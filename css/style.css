@@ -241,7 +241,7 @@ a:active {
       .card:hover .card__side--back {
         transform: rotateY(0); } }
   .card__picture--wrapper {
-    height: 50%;
+    min-height: 10rem;
     background-color: #64d3ca;
     display: flex;
     justify-content: center;
