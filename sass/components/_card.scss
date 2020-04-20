@@ -35,6 +35,7 @@
             justify-content: center;
             @media (min-width: 850px) {
                 transform: rotateY(180deg);
+                background-color: #64d3ca;
             }
         }
     }
@@ -81,8 +82,18 @@
         text-align: center;
     }
 
+    &__back--image {
+        width: 50%;
+        align-self: center;
+        display: none;
+
+        @media (min-width: 850px) {
+            display: block;
+        }
+    }
+
     &__button {
-        margin: 2rem 0;
+        margin: 1rem 0;
         align-self: center;
     }
 }

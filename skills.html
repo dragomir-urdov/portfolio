@@ -52,7 +52,11 @@
                     <i class="far fa-eye"></i>
                     <span class="nav__link--text">Work</span>
                 </a>
-                <a href="contact.html#contact" class="nav__link" title="Contact me">
+                <a
+                    href="contact.html#contact"
+                    class="nav__link"
+                    title="Contact me"
+                >
                     <i class="fas fa-envelope mail-close"></i>
                     <i class="fas fa-envelope-open-text mail-open"></i>
                     <span class="nav__link--text">Contact</span>
@@ -85,48 +89,77 @@
 
         <!-- MAIN -->
         <main class="main">
-            </section>
             <section class="skills" id="skills">
                 <h1 class="skills__header">My Skills</h1>
                 <div class="skills__content content">
                     <div class="skills__category skills__category-1">
-                       <img class="skills__category--image skills__category--image-1" src="img/undraw_programming_2svr.svg" alt="Programming">
-                       <p class="skills__category--paragraph">
-                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab harum aperiam animi consectetur necessitatibus est expedita nesciunt. Alias magni necessitatibus quibusdam nihil harum nisi quas perspiciatis. Dolorum eum at eligendi!
-                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ad at provident debitis voluptatum quaerat quos, itaque rem aliquid similique fuga minus libero pariatur quae neque illum dolor, beatae deserunt!
+                        <img
+                            class="skills__category--image skills__category--image-1"
+                            src="img/undraw_programming_2svr.svg"
+                            alt="Programming"
+                        />
+                        <p class="skills__category--paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Ab harum aperiam animi consectetur
+                            necessitatibus est expedita nesciunt. Alias magni
+                            necessitatibus quibusdam nihil harum nisi quas
+                            perspiciatis. Dolorum eum at eligendi! Lorem ipsum
+                            dolor sit, amet consectetur adipisicing elit.
+                            Molestias ad at provident debitis voluptatum quaerat
+                            quos, itaque rem aliquid similique fuga minus libero
+                            pariatur quae neque illum dolor, beatae deserunt!
+                        </p>
                     </div>
+
                     <div class="skills__category skills__category--web">
                         <h2 class="skills__category--header">
                             Web Development
                         </h2>
-                        <img class="skills__category--image skills__category--image-web" src="img/undraw_web_developer_p3e5.svg" alt="Web">
+                        <img
+                            class="skills__category--image skills__category--image-web"
+                            src="img/undraw_web_developer_p3e5.svg"
+                            alt="Web"
+                        />
                         <p class="skills__category--paragraph">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Nemo suscipit repellendus eos unde tenetur
                             pariatur voluptatum assumenda sint.
                         </p>
-                        
                     </div>
                     <div class="skills__category skills__category--android">
                         <h2 class="skills__category--header">
                             Android
                         </h2>
-                        <img class="skills__category--image skills__category--image-android" src="img/undraw_Mobile_application_mr4r.svg" alt="Mobile">
+                        <img
+                            class="skills__category--image skills__category--image-android"
+                            src="img/undraw_Mobile_application_mr4r.svg"
+                            alt="Mobile"
+                        />
                         <p class="skills__category--paragraph">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Nemo suscipit repellendus eos unde tenetur
                             pariatur voluptatum assumenda sint.
                         </p>
-                        
                     </div>
                 </div>
             </section>
             <section class="work" id="work">
                 <h1 class="work__header">Projects</h1>
+                <div class="filter">
+                    <ul class="filter__list">
+                        <li class="active">All</li>
+                        <li>Web</li>
+                        <li>Android</li>
+                        <li>iOS</li>
+                        <li>Electron</li>
+                    </ul>
+                </div>
                 <div class="work__content content">
                     <div class="card">
                         <div class="card__side card__side--front">
-                            <div class="card__picture--wrapper  card__picture--croonus">
+                            <div
+                                class="card__picture--wrapper  card__picture--croonus"
+                            >
                                 <img
                                     src="img/croonus-academy.png"
                                     alt="Croonus Academy"
@@ -142,9 +175,38 @@
                             </p>
                         </div>
                         <div class="card__side card__side--back">
+                            <img
+                                class="card__back--image"
+                                src="img/croonus_academy_phone.png"
+                                alt="Project screenshoot"
+                            />
                             <a
                                 href="https://github.com/dragomirurdov/CroonusAcademy"
                                 class="card__button git__button"
+                            >
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture--wrapper">
+                                <img
+                                    src="img/coming-soon.png"
+                                    alt="Croonus Academy"
+                                    class="card__picture"
+                                />
+                            </div>
+                            <h1 class="card__title">
+                                <span>Coming <br />Soon</span>
+                            </h1>
+                            <p class="card__detail">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="card__side card__side--back">
+                            <a href="#work" class="card__button git__button"
                                 >GitHub</a
                             >
                         </div>
@@ -163,42 +225,18 @@
                             </h1>
                             <p class="card__detail">
                                 Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. 
+                                adipisicing elit.
                             </p>
                         </div>
                         <div class="card__side card__side--back">
-                            <a
-                                href="https://github.com/dragomirurdov/CroonusAcademy"
-                                class="card__button git__button"
+                            <a href="#work" class="card__button git__button"
                                 >GitHub</a
                             >
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture--wrapper">
-                                <img
-                                    src="img/coming-soon.png"
-                                    alt="Croonus Academy"
-                                    class="card__picture"
-                                />
-                            </div>
-                            <h1 class="card__title">
-                                <span>Coming <br />Soon</span>
-                            </h1>
-                            <p class="card__detail">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. 
-                            </p>
-                        </div>
-                        <div class="card__side card__side--back">
-                            <a
-                                href="https://github.com/dragomirurdov/CroonusAcademy"
-                                class="card__button git__button"
-                                >GitHub</a
-                            >
-                        </div>
-                    </div>
+                </div>
+                <div class="load_more">
+                    <a class="load_more--text">&lt; Load more &gt;</a>
                 </div>
             </section>
         </main>
