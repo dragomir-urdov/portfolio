@@ -1,9 +1,17 @@
 .work {
     padding: 3rem;
-    width: 100%;
-    // color: white;
     display: flex;
     flex-direction: column;
+
+    &__header {
+        @include shine(#64d3ca);
+        font-size: 2.5rem;
+        margin: 4rem 0;
+        letter-spacing: 1rem;
+
+        text-transform: uppercase;
+        text-align: center;
+    }
 
     &__content {
         margin-top: 2rem;
@@ -14,6 +22,10 @@
 
         @media (min-width: 850px) {
             flex-direction: row;
+        }
+
+        .card__picture--croonus {
+            background-color: #42b732;
         }
     }
 }

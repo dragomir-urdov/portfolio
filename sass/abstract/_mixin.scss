@@ -28,3 +28,13 @@
         @include level--after($level, $content);
     }
 }
+
+@mixin shine($color) {
+    background: linear-gradient(90deg, #000, $color, #000);
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s linear infinite;
+}
