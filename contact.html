@@ -89,8 +89,74 @@
 
         <!-- MAIN -->
         <main class="main">
+            <!-- CONTACT -->
             <section class="contact">
-                CONTACT ME
+                <div class="contact__content content">
+                    <h1 class="contact__header">Contact me</h1>
+                    <p class="contact__paragraph">
+                        Ukoliko Vam je potrebno freelance programer na vasem
+                        projektu ili kreiranje ideje iz pocetka, <br />
+                        Budite slobodni da me kontaktirate
+                    </p>
+                    <form action="#" class="contact__form" autocomplete="off">
+                        <ul class="contact__form--group">
+                            <li class="contact__form--group-name form__item">
+                                <input
+                                    type="text"
+                                    class="form__input"
+                                    id="name"
+                                    placeholder="Name"
+                                    required
+                                />
+                                <label for="name" class="form__label">
+                                    Name:
+                                </label>
+                            </li>
+                            <li class="contact__form--group-email form__item">
+                                <input
+                                    type="email"
+                                    class="form__input"
+                                    id="email"
+                                    placeholder="Email"
+                                    required
+                                />
+                                <label for="email" class="form__label">
+                                    Email:
+                                </label>
+                            </li>
+                            <li class="contact__form--group-subject form__item">
+                                <input
+                                    type="text"
+                                    class="form__input"
+                                    id="subject"
+                                    placeholder="Subject"
+                                    required
+                                />
+                                <label for="subject" class="form__label">
+                                    Subject:
+                                </label>
+                            </li>
+                            <li class="contact__form--group-message form__item">
+                                <textarea
+                                    class="form__input"
+                                    id="message"
+                                    placeholder="Message"
+                                    required
+                                ></textarea>
+                                <label for="message" class="form__label">
+                                    Message:
+                                </label>
+                            </li>
+                            <li class="contact__form--group-submit form__item">
+                                <input
+                                    class="send__button"
+                                    type="submit"
+                                    value="SEND"
+                                />
+                            </li>
+                        </ul>
+                    </form>
+                </div>
             </section>
         </main>
     </body>

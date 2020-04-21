@@ -1,12 +1,12 @@
 .skills {
-    color: var(--text-color);
+    color: var(--text-color-light);
     padding: 1rem;
     width: 100%;
     @media (min-width: 850px) {
         padding: 4rem;
     }
     &__header {
-        @include shine(#64d3ca);
+        @include shine(var(--color-blue));
         font-size: 4rem;
         margin: 4rem 0;
         letter-spacing: 1rem;
@@ -72,7 +72,7 @@
             font-size: 1.5rem;
             letter-spacing: 5px;
             text-transform: uppercase;
-            color: #64d3ca;
+            color: var(--color-blue);
         }
         &--image {
             width: 100%;
@@ -81,7 +81,7 @@
 
         &--paragraph {
             font-size: 1.2rem;
-            color: var(--text-color);
+            color: var(--text-color-light);
             margin: 1rem 0;
             align-self: start;
         }

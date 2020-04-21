@@ -1,7 +1,13 @@
 :root {
-    --color-primary: #222831;
-    --color-secondary: #f0a500;
-    --text-color: #ececec;
+    --text-color-light: #ececec;
+    --text-color-dark: #222831;
 
-    --linear--primary: linear-gradient(to right, #14161a, #171a1f);
+    --bg-color-dark: black;
+    --bg-color-card: white;
+    --bg-color-form: #1d1d1d;
+
+    --bg-color-navigation: linear-gradient(to right, #14161a, #171a1f);
+
+    --color-yellow: #f0a500;
+    --color-blue: #64d3ca;
 }

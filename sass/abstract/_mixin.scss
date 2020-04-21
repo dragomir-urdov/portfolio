@@ -1,34 +1,3 @@
-@mixin level--after($level, $content) {
-    @if $level != 0 {
-        content: $content;
-        left: $level/2;
-    } @else {
-        content: "Still learning!";
-        left: 50%;
-    }
-    transform: translateX(-50%);
-}
-
-@mixin level--before($level) {
-    content: "";
-    @if $level != 0 {
-        width: $level;
-        height: 100%;
-        background-color: #007cd7;
-        box-shadow: inset 0 0 0.5rem rgba($color: #000000, $alpha: 0.8);
-        border-radius: 10px;
-    }
-}
-
-@mixin level($level: 0, $content: "0") {
-    &::before {
-        @include level--before($level);
-    }
-    &::after {
-        @include level--after($level, $content);
-    }
-}
-
 @mixin shine($color) {
     background: linear-gradient(90deg, #000, $color, #000);
     background-size: 80% 100%;

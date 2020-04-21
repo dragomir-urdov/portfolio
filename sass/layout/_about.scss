@@ -4,7 +4,7 @@
 
     padding: 4rem 1rem;
 
-    background: url(../img/airplane-rotated.jpg), #000;
+    background: url(../img/airplane-rotated.jpg);
     background-size: contain;
     background-position: top right;
     background-repeat: no-repeat;
@@ -12,8 +12,6 @@
     @media (min-width: 960px) {
         padding: 4rem 1rem;
     }
-
-    color: var(--text-color);
 
     &__content {
         display: grid;
@@ -31,14 +29,14 @@
         &--header {
             text-align: center;
             font-size: 3rem;
-            color: var(--color-secondary);
+            color: var(--color-yellow);
         }
 
         &--subheader {
             text-align: center;
             padding: 0.5rem;
             line-height: 1.5;
-            color: var(--text-color);
+            color: var(--color-blue);
         }
 
         &--paragraph {
@@ -69,7 +67,7 @@
             overflow: hidden;
 
             box-sizing: content-box;
-            border: 0.5rem solid var(--color-secondary);
+            border: 0.5rem solid var(--color-yellow);
             transition: all 0.3s ease-in-out;
 
             z-index: 2;

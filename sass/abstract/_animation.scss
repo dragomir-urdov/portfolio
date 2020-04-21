@@ -29,7 +29,7 @@
     }
     40%,
     60% {
-        color: var(--color-secondary);
+        color: var(--color-yellow);
     }
 }
 
@@ -58,12 +58,6 @@
     }
     40% {
         transform: scale(1.05) rotate(0);
-    }
-}
-
-@keyframes heartbeat {
-    50% {
-        transform: scale(1.1);
     }
 }
 

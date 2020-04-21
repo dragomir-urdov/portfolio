@@ -4,7 +4,7 @@
     flex-direction: column;
 
     &__header {
-        @include shine(#64d3ca);
+        @include shine(var(--color-blue));
         font-size: 2.5rem;
         margin: 4rem 0;
         letter-spacing: 1rem;
@@ -20,7 +20,7 @@
     .filter {
         margin: 2rem 2rem 0;
         align-self: start;
-        color: var(--text-color);
+        color: var(--text-color-light);
         &__list {
             list-style: none;
             margin: 0;
@@ -30,8 +30,8 @@
             gap: 1.5rem;
 
             .active {
-                color: var(--color-secondary);
-                border-bottom: 2px solid var(--color-secondary);
+                color: var(--color-yellow);
+                border-bottom: 2px solid var(--color-yellow);
             }
 
             & > *:not(.active) {
@@ -43,7 +43,7 @@
             }
 
             li:hover {
-                color: var(--color-secondary);
+                color: var(--color-yellow);
                 opacity: 1;
             }
         }
@@ -65,13 +65,13 @@
     }
 
     .load_more {
-        color: var(--text-color);
+        color: var(--text-color-light);
         text-transform: uppercase;
         margin: 1rem;
         cursor: pointer;
 
         &:hover {
-            border-bottom: 2px solid var(--color-secondary);
+            border-bottom: 2px solid var(--color-yellow);
         }
     }
 }

@@ -3,8 +3,7 @@
     max-width: 1000px;
     padding: 1rem;
 
-    color: var(--text-color);
-    background: url(../img/airplane.jpg), #000;
+    background: url(../img/airplane.jpg);
     background-size: contain;
     background-position: bottom right;
     background-repeat: no-repeat;
@@ -26,7 +25,7 @@
         &--h1 {
             text-align: center;
             font-size: 4rem;
-            color: var(--color-secondary);
+            color: var(--color-yellow);
             animation: jittery 4s infinite;
         }
         &--h2 {

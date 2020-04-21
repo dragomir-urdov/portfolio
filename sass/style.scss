@@ -12,7 +12,8 @@ body {
     line-height: 1.2;
     overflow-x: hidden; //because animation
 
-    background-color: black;
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-light);
 }
 
 ::selection {
@@ -22,13 +23,13 @@ body {
 
 a:link,
 a:visited {
-    color: var(--text-color);
+    color: var(--text-color-light);
     text-decoration: none;
 }
 
 a:hover,
 a:active {
-    color: var(--color-secondary);
+    color: var(--color-yellow);
 }
 
 @import "abstract/mixin";
@@ -36,6 +37,7 @@ a:active {
 
 @import "components/buttons";
 @import "components/card";
+@import "components/form";
 
 @import "layout/navigation";
 @import "layout/main";
