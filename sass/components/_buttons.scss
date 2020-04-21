@@ -68,6 +68,8 @@
 }
 
 .send__button {
+    font-weight: bold;
+    letter-spacing: 0.1rem;
     padding: 0.5rem 2rem;
     background-color: transparent;
     color: var(--color-blue);
@@ -75,4 +77,10 @@
     cursor: pointer;
 
     border-radius: 5px;
+
+    &:hover,
+    &:active {
+        background-color: var(--color-blue);
+        color: var(--text-color-dark);
+    }
 }

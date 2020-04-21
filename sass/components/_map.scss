@@ -1,0 +1,28 @@
+.map {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    margin: 5rem 0 3rem;
+
+    &__canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 500px;
+        width: 100%;
+    }
+
+    &__detail {
+        position: absolute;
+        bottom: 0.5rem;
+        left: 0.5rem;
+        background-color: var(--bg-color-dark);
+        padding: 1rem;
+        box-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.75);
+        border-bottom: 2px solid var(--color-blue);
+
+        & > * {
+            display: block;
+            margin: 0.5rem 0;
+        }
+    }
+}

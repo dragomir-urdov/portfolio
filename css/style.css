@@ -3,7 +3,7 @@
   --text-color-dark: #222831;
   --bg-color-dark: black;
   --bg-color-card: white;
-  --bg-color-form: #1d1d1d;
+  --bg-color-form: #2b2b2b;
   --bg-color-navigation: linear-gradient(to right, #14161a, #171a1f);
   --color-yellow: #f0a500;
   --color-blue: #64d3ca; }
@@ -196,12 +196,17 @@ a:active {
   box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.5); }
 
 .send__button {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
   padding: 0.5rem 2rem;
   background-color: transparent;
   color: var(--color-blue);
   border: 2px solid var(--color-blue);
   cursor: pointer;
   border-radius: 5px; }
+  .send__button:hover, .send__button:active {
+    background-color: var(--color-blue);
+    color: var(--text-color-dark); }
 
 .card {
   perspective: 150rem;
@@ -312,6 +317,28 @@ a:active {
   height: 150px;
   width: 100%;
   resize: vertical; }
+
+.map {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  margin: 5rem 0 3rem; }
+  .map__canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%; }
+  .map__detail {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    background-color: var(--bg-color-dark);
+    padding: 1rem;
+    box-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.75);
+    border-bottom: 2px solid var(--color-blue); }
+    .map__detail > * {
+      display: block;
+      margin: 0.5rem 0; }
 
 .navigation {
   position: fixed;
