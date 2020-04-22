@@ -69,3 +69,22 @@
         background-position: 500%;
     }
 }
+
+@keyframes show-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes fade_from_bottom {
+    0% {
+        transform: translateY(5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
