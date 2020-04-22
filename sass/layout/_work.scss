@@ -39,11 +39,18 @@
 
             li {
                 cursor: pointer;
+                transition: all 0.3s ease;
             }
 
-            li:hover {
+            li:hover:nth-child(even) {
                 color: var(--color-yellow);
                 opacity: 1;
+                transform: rotate(15deg);
+            }
+            li:hover:nth-child(odd) {
+                color: var(--color-yellow);
+                opacity: 1;
+                transform: rotate(-15deg);
             }
         }
     }

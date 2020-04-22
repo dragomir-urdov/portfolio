@@ -20,6 +20,7 @@
         &:focus {
             outline: none;
             border-bottom: 3px solid var(--color-blue);
+            scale: 1.05;
         }
 
         &:focus:invalid {

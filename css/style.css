@@ -143,23 +143,23 @@ a:active {
   0% {
     opacity: 0; }
   100% {
-    opacity: 0.5; } }
+    opacity: 1; } }
 
 @keyframes show-in {
   0% {
     opacity: 0; }
   100% {
-    opacity: 0.5; } }
+    opacity: 1; } }
 
 @-webkit-keyframes fade_from_bottom {
   0% {
-    transform: translateY(5rem); }
+    transform: translateY(15rem); }
   100% {
     transform: translateY(0); } }
 
 @keyframes fade_from_bottom {
   0% {
-    transform: translateY(5rem); }
+    transform: translateY(15rem); }
   100% {
     transform: translateY(0); } }
 
@@ -184,27 +184,28 @@ a:active {
 
 .git__button:link, .git__button:visited {
   position: relative;
-  display: inline-block;
   font-size: 1rem;
   padding: 1rem 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--text-color-dark);
-  background-color: var(--color-yellow);
   border-radius: 1rem;
   transition: all 0.5s;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+  color: var(--text-color-dark);
+  background-color: var(--color-yellow);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
 
 .git__button::after {
   content: "";
   height: 100%;
   width: 100%;
   z-index: -1;
-  border-radius: 1rem;
   position: absolute;
   top: 0;
   right: 0;
   background-color: var(--color-yellow);
+  border-radius: 1rem;
   opacity: 1;
   transition: all 0.5s; }
 
@@ -319,7 +320,8 @@ a:active {
   order: 2; }
   .form__input:focus {
     outline: none;
-    border-bottom: 3px solid var(--color-blue); }
+    border-bottom: 3px solid var(--color-blue);
+    scale: 1.05; }
   .form__input:focus:invalid {
     border-bottom: 3px solid var(--color-yellow); }
   .form__input::-webkit-input-placeholder {
@@ -359,15 +361,18 @@ a:active {
       opacity: 1; }
   .map__detail {
     position: absolute;
-    bottom: 0.5rem;
-    left: 0.5rem;
+    bottom: 0.7rem;
+    left: 0.7rem;
     background-color: var(--bg-color-dark);
     padding: 1rem;
     box-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.75);
-    border-bottom: 2px solid var(--color-blue); }
+    border-bottom: 2px solid var(--color-blue);
+    transition: all 0.3s ease; }
     .map__detail > * {
       display: block;
       margin: 0.5rem 0; }
+    .map__detail:hover {
+      scale: 1.05; }
 
 .navigation {
   position: fixed;
@@ -586,9 +591,7 @@ a:active {
   font-family: "Press Start 2P", cursive;
   font-size: 0.5rem;
   line-height: 2;
-  opacity: 0.5;
-  -webkit-animation: show-in 2s forwards;
-          animation: show-in 2s forwards; }
+  opacity: 0.5; }
   .code--tab--1 {
     margin-left: 1rem; }
   .code--tab--2 {
@@ -694,8 +697,8 @@ a:active {
     @media (min-width: 850px) {
       .skills__category-1 img {
         width: 65%;
-        -webkit-animation: fade_from_bottom 1s forwards;
-                animation: fade_from_bottom 1s forwards; }
+        -webkit-animation: fade_from_bottom 1s forwards, show-in 1s forwards;
+                animation: fade_from_bottom 1s forwards, show-in 1s forwards; }
       .skills__category-1 p {
         width: 70%;
         margin: 0 auto;
@@ -775,10 +778,16 @@ a:active {
       .work .filter__list > *:not(.active) {
         opacity: 0.5; }
       .work .filter__list li {
-        cursor: pointer; }
-      .work .filter__list li:hover {
+        cursor: pointer;
+        transition: all 0.3s ease; }
+      .work .filter__list li:hover:nth-child(even) {
         color: var(--color-yellow);
-        opacity: 1; }
+        opacity: 1;
+        transform: rotate(15deg); }
+      .work .filter__list li:hover:nth-child(odd) {
+        color: var(--color-yellow);
+        opacity: 1;
+        transform: rotate(-15deg); }
   .work__content {
     padding: 1rem;
     display: flex;
@@ -806,9 +815,12 @@ a:active {
       .contact__content {
         padding: 4rem; } }
   .contact__header {
+    margin-top: 3rem;
     font-size: 3rem;
     text-align: center;
-    color: var(--color-blue); }
+    color: var(--color-blue);
+    -webkit-animation: jittery 2s infinite;
+            animation: jittery 2s infinite; }
   .contact__paragraph {
     text-align: center;
     margin: 1.5rem 0 1rem;

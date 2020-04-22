@@ -76,13 +76,13 @@
     }
 
     100% {
-        opacity: 0.5;
+        opacity: 1;
     }
 }
 
 @keyframes fade_from_bottom {
     0% {
-        transform: translateY(5rem);
+        transform: translateY(15rem);
     }
     100% {
         transform: translateY(0);

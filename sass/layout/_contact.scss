@@ -11,9 +11,12 @@
     }
 
     &__header {
+        margin-top: 3rem;
         font-size: 3rem;
         text-align: center;
         color: var(--color-blue);
+
+        animation: jittery 2s infinite;
     }
 
     &__paragraph {
