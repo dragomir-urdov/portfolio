@@ -23,12 +23,12 @@ body {
   color: var(--text-color-light); }
 
 ::-moz-selection {
-  background-color: var(--color-secondary);
-  color: var(--color-primary); }
+  background-color: var(--color-yellow);
+  color: var(--text-color-dark); }
 
 ::selection {
-  background-color: var(--color-secondary);
-  color: var(--color-primary); }
+  background-color: var(--color-yellow);
+  color: var(--text-color-dark); }
 
 a:link,
 a:visited {
