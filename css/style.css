@@ -374,6 +374,34 @@ a:active {
     .map__detail:hover {
       scale: 1.05; }
 
+.mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-animation: show-in 1s forwards;
+          animation: show-in 1s forwards; }
+  .mail__content {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 850px) {
+      .mail__content {
+        width: 1000px; } }
+  .mail__image {
+    width: 60%;
+    margin: 2rem; }
+  .mail__text {
+    font-size: 1.2rem;
+    text-align: center; }
+  .mail__close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    align-self: flex-end;
+    font-size: 3rem; }
+
 .navigation {
   position: fixed;
   top: 0;
@@ -595,7 +623,11 @@ a:active {
   font-family: "Press Start 2P", cursive;
   font-size: 0.5rem;
   line-height: 2;
-  opacity: 0.5; }
+  opacity: 0.5;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
   .code--tab--1 {
     margin-left: 1rem; }
   .code--tab--2 {

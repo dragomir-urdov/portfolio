@@ -1,0 +1,34 @@
+.mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: show-in 1s forwards;
+
+    &__content {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: 850px) {
+            width: 1000px;
+        }
+    }
+    &__image {
+        width: 60%;
+        margin: 2rem;
+    }
+    &__text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    &__close {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        align-self: flex-end;
+        font-size: 3rem;
+    }
+}

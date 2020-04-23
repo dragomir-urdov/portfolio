@@ -22,7 +22,7 @@
     "bugs": {
         "url": "https://github.com/dragomirurdov/Portfolio/issues"
     },
-    "homepage": "https://github.com/dragomirurdov/Portfolio#readme",
+    "homepage": "https://dragomirurdov.github.io/portfolio",
     "devDependencies": {
         "browser-sync": "^2.26.7",
         "gulp": "^4.0.2",

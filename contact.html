@@ -98,13 +98,19 @@
                         projektu ili kreiranje ideje iz pocetka, <br />
                         Budite slobodni da me kontaktirate
                     </p>
-                    <form action="#" class="contact__form" autocomplete="off">
+                    <form
+                        action="https://formspree.io/mlewqoyq"
+                        method="POST"
+                        class="contact__form"
+                        autocomplete="off"
+                    >
                         <ul class="contact__form--group">
                             <li class="contact__form--group-name form__item">
                                 <input
                                     type="text"
                                     class="form__input"
                                     id="name"
+                                    name="name"
                                     placeholder="Name"
                                     required
                                 />
@@ -117,6 +123,7 @@
                                     type="email"
                                     class="form__input"
                                     id="email"
+                                    name="_replyto"
                                     placeholder="Email"
                                     required
                                 />
@@ -129,8 +136,8 @@
                                     type="text"
                                     class="form__input"
                                     id="subject"
+                                    name="_subject"
                                     placeholder="Subject"
-                                    required
                                 />
                                 <label for="subject" class="form__label">
                                     Subject:
@@ -140,6 +147,7 @@
                                 <textarea
                                     class="form__input"
                                     id="message"
+                                    name="message"
                                     placeholder="Message"
                                     required
                                 ></textarea>
@@ -155,6 +163,11 @@
                                 />
                             </li>
                         </ul>
+                        <input
+                            type="hidden"
+                            name="_next"
+                            value="https://dragomirurdov.github.io/mail/"
+                        />
                     </form>
                     <div class="map">
                         <div class="map__canvas">
