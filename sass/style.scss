@@ -28,8 +28,10 @@ a:visited {
 }
 
 a:hover,
-a:active {
+a:active,
+a:focus {
     color: var(--color-yellow);
+    outline: none;
 }
 
 @import "abstract/mixin";

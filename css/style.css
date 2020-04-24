@@ -36,8 +36,10 @@ a:visited {
   text-decoration: none; }
 
 a:hover,
-a:active {
-  color: var(--color-yellow); }
+a:active,
+a:focus {
+  color: var(--color-yellow);
+  outline: none; }
 
 @-webkit-keyframes typing {
   0% {
@@ -227,6 +229,9 @@ a:active {
   background-color: transparent;
   color: var(--color-blue);
   border: 2px solid var(--color-blue);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   cursor: pointer;
   border-radius: 5px; }
   .send__button:hover, .send__button:active {
