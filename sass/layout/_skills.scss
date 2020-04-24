@@ -1,6 +1,9 @@
 .skills {
-    padding: 1rem;
+    padding: 0 1rem;
     width: 100%;
+
+    overflow: hidden;
+
     @media (min-width: 850px) {
         padding: 4rem;
     }
@@ -15,7 +18,7 @@
 
     &__category {
         text-align: center;
-        margin: 2rem;
+        margin: 1rem;
 
         @media (min-width: 850px) {
             &-general {
