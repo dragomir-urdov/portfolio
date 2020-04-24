@@ -1,5 +1,4 @@
 .skills {
-    color: var(--text-color-light);
     padding: 1rem;
     width: 100%;
     @media (min-width: 850px) {
@@ -7,10 +6,9 @@
     }
     &__header {
         @include shine(var(--color-blue));
+        margin: 2rem 0;
         font-size: 4rem;
-        margin: 4rem 0;
         letter-spacing: 1rem;
-
         text-transform: uppercase;
         text-align: center;
     }
@@ -20,10 +18,9 @@
         margin: 2rem;
 
         @media (min-width: 850px) {
-            &-1 {
+            &-general {
                 img {
                     width: 65%;
-                    animation: fade_from_bottom 1s forwards, show-in 1s forwards;
                 }
                 p {
                     width: 70%;
@@ -40,6 +37,8 @@
                 align-items: center;
             }
             &--web {
+                padding: 1rem;
+
                 h2 {
                     grid-column: 2 / -1;
                     grid-row: 1 / span 1;
@@ -54,6 +53,8 @@
                 }
             }
             &--android {
+                padding: 1rem;
+
                 h2 {
                     grid-column: 1 / span 1;
                     grid-row: 1 / span 1;
@@ -82,9 +83,9 @@
 
         &--paragraph {
             font-size: 1.2rem;
-            color: var(--text-color-light);
             margin: 1rem 0;
             align-self: start;
+            letter-spacing: 0.1rem;
         }
     }
 }

@@ -1,4 +1,8 @@
+// ABSTRACT
 @import "abstract/variable";
+@import "abstract/mixin";
+@import "abstract/animation";
+
 *,
 *::before,
 *::after {
@@ -7,18 +11,17 @@
     padding: 0;
 }
 
-body {
-    font-family: "Baloo Bhaina 2", sans-serif;
-    line-height: 1.2;
-    overflow-x: hidden; //because animation
-
-    background-color: var(--bg-color-dark);
-    color: var(--text-color-light);
-}
-
 ::selection {
     background-color: var(--color-yellow);
     color: var(--text-color-dark);
+}
+
+body {
+    font-family: "Baloo Bhaina 2", sans-serif;
+    line-height: 1.2;
+
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-light);
 }
 
 a:link,
@@ -34,15 +37,14 @@ a:focus {
     outline: none;
 }
 
-@import "abstract/mixin";
-@import "abstract/animation";
-
+// COMPONENTS
 @import "components/buttons";
 @import "components/card";
+@import "components/filter";
 @import "components/form";
 @import "components/map";
-@import "components/mail";
 
+// LAYOUT
 @import "layout/navigation";
 @import "layout/main";
 @import "layout/home";
@@ -50,3 +52,4 @@ a:focus {
 @import "layout/skills";
 @import "layout/work";
 @import "layout/contact";
+@import "layout/mail";

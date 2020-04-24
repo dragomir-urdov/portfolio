@@ -20,6 +20,9 @@
             href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2|Press+Start+2P&display=swap"
             rel="stylesheet"
         />
+
+        <!-- AOS - Animation on Scroll library -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <!-- NAVIGATION -->
@@ -40,7 +43,7 @@
                     <i class="fas fa-user-astronaut"></i>
                     <span class="nav__link--text">About</span>
                 </a>
-                <a href="skills.html#skills" class="nav__link">
+                <a href="page/skills.html#skills" class="nav__link">
                     <i class="fas fa-meteor"></i>
                     <span class="nav__link--text">Skills</span>
                 </a>
@@ -53,7 +56,7 @@
                     <span class="nav__link--text">CV</span>
                 </a>
                 <a
-                    href="contact.html#contact"
+                    href="page/contact.html#contact"
                     class="nav__link"
                     title="Contact me"
                 >
@@ -94,7 +97,11 @@
                     <span class="code">&lt;html&gt;</span>
                     <span class="code code--tab--1">&lt;head&gt;</span>
                     <span class="code code--tab--2">&lt;title&gt;</span>
-                    <h3 class="home__header--h2">
+                    <h3
+                        class="home__header--h2"
+                        data-aos="fade"
+                        data-aos-delay="800"
+                    >
                         <span class="code">&lt;</span>
                         Dragomir Urdov
                         <span class="code">&gt;</span>
@@ -104,11 +111,15 @@
                     <span class="code code--tab--1">&lt;body&gt;</span>
                     <span class="code code--tab--2">&lt;h1&gt;</span>
                     <h1 class="home__header--h1">
-                        Hi, I am Front-End Developer
+                        Hi, I am Full-Stack Developer
                     </h1>
                     <span class="code code--tab--2">&lt;/h1&gt;</span>
                     <span class="code code--tab--2">&lt;h2&gt;</span>
-                    <h2 class="home__header--h2">
+                    <h2
+                        class="home__header--h2"
+                        data-aos="fade"
+                        data-aos-delay="800"
+                    >
                         <span class="code">&lt;</span>
                         and I can realise any your idea
                         <span class="code">&gt;</span>
@@ -116,8 +127,10 @@
                     <span class="code code--tab--2">&lt;/h2&gt;</span>
                     <span class="code code--tab--2">&lt;button&gt;</span>
                     <a
-                        href="contact.html#contact"
+                        href="page/contact.html#contact"
                         class="home__button typing-button"
+                        data-aos="fade"
+                        data-aos-delay="800"
                     >
                         <p>Contact me</p>
                     </a>
@@ -128,22 +141,24 @@
             </section>
             <section class="about" id="about">
                 <div class="about__content content">
-                    <h1 class="about__content--header">
+                    <h1 class="about__content--header" data-aos="zoom-in-up">
                         I am Dragomir Urdov
                     </h1>
-                    <div class="about__content--image">
+                    <div class="about__content--image" data-aos="flip-left">
                         <img src="./img/profile.jpg" alt="Profile image" />
                     </div>
-                    <h2 class="about__content--subheader">
-                        Front-End Developer,<br />Android Developer,<br />Marathon
+                    <h2
+                        class="about__content--subheader"
+                        data-aos="zoom-in-down"
+                    >
+                        Full-Stack Developer,<br />Android Developer,<br />Marathon
                         Runner,<br />Hiker...
                     </h2>
                     <p class="about__content--paragraph">
-                        Zdravo! Kao Programer tek zapocinjem svoju karijeru.
-                        Uzivam u kreiranju novih stvari i stalno sam u potrazi
-                        za novim izazovim. <br />
-                        Zainteresovan sam za kreiranje kako web, tako i mobile
-                        aplikacija.
+                        Hello! Welcome to my programming journey! I enjoy
+                        creating new things and I am always in search of new
+                        challenges. I am extremely interested in creating both
+                        web and mobile applications.
                     </p>
                     <a
                         href="https://github.com/dragomirurdov?tab=repositories"
@@ -155,5 +170,13 @@
                 </div>
             </section>
         </main>
+
+        <!-- AOS - Animation on Scroll library -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800
+            });
+        </script>
     </body>
 </html>

@@ -70,21 +70,13 @@
     }
 }
 
-@keyframes show-in {
-    0% {
+@keyframes slide-left {
+    from {
         opacity: 0;
+        transform: translateX(-5rem);
     }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fade_from_bottom {
-    0% {
-        transform: translateY(15rem);
-    }
-    100% {
-        transform: translateY(0);
+    to {
+        opacity: 0.5;
+        transform: translateX(0);
     }
 }

@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
         <title>Dragomir Urdov</title>
 
         <!-- STYLE -->
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="../css/style.css" />
 
         <!-- FONT AWESOME -->
         <script
@@ -20,12 +20,15 @@
             href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2|Press+Start+2P&display=swap"
             rel="stylesheet"
         />
+
+        <!-- AOS - Animation on Scroll library -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <!-- NAVIGATION -->
         <div class="navigation">
-            <a href="index.html#home" class="logo">
-                <img src="./img/logo.png" alt="logo" />
+            <a href="../index.html#home" class="logo">
+                <img src="../img/logo.png" alt="logo" />
             </a>
             <input
                 type="checkbox"
@@ -36,7 +39,7 @@
                 <span class="mobile__nav--icon"></span>
             </label>
             <nav class="nav">
-                <a href="index.html#home" class="nav__link">
+                <a href="../index.html#home" class="nav__link">
                     <i class="fas fa-user-astronaut"></i>
                     <span class="nav__link--text">About</span>
                 </a>
@@ -45,7 +48,7 @@
                     <span class="nav__link--text">Skills</span>
                 </a>
                 <a
-                    href="/doc/cv_dragomir_urdov.docx"
+                    href="../doc/cv_dragomir_urdov.docx"
                     class="nav__link"
                     download
                 >
@@ -92,17 +95,23 @@
             <!-- CONTACT -->
             <section class="contact">
                 <div class="contact__content content">
-                    <h1 class="contact__header">Contact me</h1>
-                    <p class="contact__paragraph">
-                        Ukoliko Vam je potrebno freelance programer na vasem
-                        projektu ili kreiranje ideje iz pocetka, <br />
-                        Budite slobodni da me kontaktirate
+                    <h1 class="contact__header" data-aos="fade">
+                        Contact me
+                    </h1>
+                    <p class="contact__paragraph" data-aos="fade">
+                        If You need a freelance programmer in your project
+                        <br />
+                        or advice for the creation of the conceptual solution
+                        from scratch, <br />
+                        feel free to contact me.
                     </p>
                     <form
                         action="https://formspree.io/mlewqoyq"
                         method="POST"
                         class="contact__form"
                         autocomplete="off"
+                        data-aos="zoom-in-down"
+                        data-aos-delay="500"
                     >
                         <ul class="contact__form--group">
                             <li class="contact__form--group-name form__item">
@@ -156,10 +165,11 @@
                                 </label>
                             </li>
                             <li class="contact__form--group-submit form__item">
+                                <!-- if I have gold plan on formspree -->
                                 <input
                                     type="hidden"
                                     name="_next"
-                                    value="https://dragomirurdov.github.io/portfolio/thanks.html"
+                                    value="https://dragomirurdov.github.io/portfolio/page/mail.html/"
                                 />
                             </li>
                             <li class="contact__form--group-submit form__item">
@@ -171,7 +181,8 @@
                             </li>
                         </ul>
                     </form>
-                    <div class="map">
+                    <!-- MAP -->
+                    <div class="map" data-aos="zoom-in-up">
                         <div class="map__canvas">
                             <iframe
                                 width="100%"
@@ -207,5 +218,12 @@
                 </div>
             </section>
         </main>
+        <!-- AOS - Animation on Scroll library -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800
+            });
+        </script>
     </body>
 </html>

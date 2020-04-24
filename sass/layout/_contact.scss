@@ -1,6 +1,5 @@
 .contact {
     width: 100%;
-    color: var(--text-color-light);
 
     &__content {
         padding: 1rem 2rem;
@@ -11,22 +10,26 @@
     }
 
     &__header {
-        margin-top: 3rem;
+        margin-top: 2rem;
         font-size: 3rem;
         text-align: center;
         color: var(--color-blue);
 
         animation: jittery 2s infinite;
+
+        @media (min-width: 850px) {
+            margin-top: 0;
+        }
     }
 
     &__paragraph {
         text-align: center;
         margin: 1.5rem 0 1rem;
-        color: var(--text-color-light);
     }
 
     &__form--group {
         list-style: none;
+        width: 100%;
 
         @media (min-width: 850px) {
             display: grid;

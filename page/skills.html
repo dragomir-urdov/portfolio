@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
         <title>Dragomir Urdov</title>
 
         <!-- STYLE -->
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="../css/style.css" />
 
         <!-- FONT AWESOME -->
         <script
@@ -20,12 +20,17 @@
             href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2|Press+Start+2P&display=swap"
             rel="stylesheet"
         />
+        <!-- AOS - Animation on Scroll library-->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- NAVIGATION -->
         <div class="navigation">
-            <a href="index.html#home" class="logo">
-                <img src="./img/logo.png" alt="logo" />
+            <a href="../index.html#home" class="logo">
+                <img src="../img/logo.png" alt="logo" />
             </a>
             <input
                 type="checkbox"
@@ -36,7 +41,7 @@
                 <span class="mobile__nav--icon"></span>
             </label>
             <nav class="nav">
-                <a href="index.html#home" class="nav__link">
+                <a href="../index.html#home" class="nav__link">
                     <i class="fas fa-user-astronaut"></i>
                     <span class="nav__link--text">About</span>
                 </a>
@@ -45,7 +50,7 @@
                     <span class="nav__link--text">Skills</span>
                 </a>
                 <a
-                    href="/doc/cv_dragomir_urdov.docx"
+                    href="../doc/cv_dragomir_urdov.docx"
                     class="nav__link"
                     download
                 >
@@ -92,54 +97,70 @@
             <section class="skills" id="skills">
                 <h1 class="skills__header">My Skills</h1>
                 <div class="skills__content content">
-                    <div class="skills__category skills__category-1">
+                    <div
+                        class="skills__category skills__category-general"
+                        data-aos="fade-up"
+                    >
                         <img
-                            class="skills__category--image skills__category--image-1"
-                            src="img/undraw_programming_2svr.svg"
+                            class="skills__category--image skills__category--image-general"
+                            src="../img/undraw_programming_2svr.svg"
                             alt="Programming"
                         />
                         <p class="skills__category--paragraph">
-                            Spreman sam za razvoj na bilo kom polju
-                            programiranja i ne bezim od izazova. Zainteresovan
-                            sam za izgradnju softvera na mobilnim i desktop
-                            platformama. Lako se snalazim na razlicitim
-                            platformama i sistemima kao sto su Git, Docker, VS
-                            Code, JetBrains IDE's...
+                            I am ready to develop in any programming field.
+                            Especially interested in software development on
+                            mobile and desktop platforms. I am very resourceful
+                            on different systems and platforms such as Git, VS
+                            Code, JetBrains IDE, Android Studio...
                         </p>
                     </div>
 
                     <div class="skills__category skills__category--web">
-                        <h2 class="skills__category--header">
+                        <h2
+                            class="skills__category--header"
+                            data-aos="fade-left"
+                        >
                             Web Development
                         </h2>
                         <img
                             class="skills__category--image skills__category--image-web"
-                            src="img/undraw_web_developer_p3e5.svg"
+                            src="../img/undraw_web_developer_p3e5.svg"
                             alt="Web"
+                            data-aos="fade-right"
                         />
-                        <p class="skills__category--paragraph">
-                            Posedujem solidno znanje Front-End tehnologija kao
-                            sto su HTML, CSS, Java Script, Bootstrap. Trenutno
-                            istrazujem polje Back-Enda koriscenjem PHP-a,
-                            MySQL-a, Node JS i Firebase..
+                        <p
+                            class="skills__category--paragraph"
+                            data-aos="fade-left"
+                        >
+                            I have a solid knowledge of Front-End technologies
+                            such as HTML, CSS, JavaScript and Boostrap. At the
+                            moment, I am exploring the field of Back-End
+                            technologies using PHP, MySQL, NodeJS and Firebase.
                         </p>
                     </div>
                     <div class="skills__category skills__category--android">
-                        <h2 class="skills__category--header">
+                        <h2
+                            class="skills__category--header"
+                            data-aos="fade-right"
+                        >
                             Android
                         </h2>
                         <img
                             class="skills__category--image skills__category--image-android"
-                            src="img/undraw_Mobile_application_mr4r.svg"
+                            src="../img/undraw_Mobile_application_mr4r.svg"
                             alt="Mobile"
+                            data-aos="fade-left"
                         />
-                        <p class="skills__category--paragraph">
-                            Zainteresovan za kreiranje mobilnih aplikacija,
-                            kreirao sam android aplikacije u izvornom obliku
-                            koriscenjem Java i Kotlin programskog jezika.
-                            Svakako nameravam pokriti i iOS programiranje u
-                            Swift programskom jeziku ali i kreirati aplikacije u
-                            Flutter ili React Native okruzenjima.
+                        <p
+                            class="skills__category--paragraph"
+                            data-aos="fade-right"
+                        >
+                            I am interested in creating mobile applications, as
+                            I already created a few of them in their native form
+                            using Java and Kotlin programming languages. Surely,
+                            I plan to cover iOS programming in Swift and to
+                            create applications in Flutter or React Native
+                            environment as well.
                         </p>
                     </div>
                 </div>
@@ -155,14 +176,14 @@
                         <li>Electron</li>
                     </ul>
                 </div>
-                <div class="work__content content">
+                <div class="work__content content" data-aos="fade-up">
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div
                                 class="card__picture--wrapper  card__picture--croonus"
                             >
                                 <img
-                                    src="img/croonus-academy.png"
+                                    src="../img/croonus-academy.png"
                                     alt="Croonus Academy"
                                     class="card__picture"
                                 />
@@ -178,7 +199,7 @@
                         <div class="card__side card__side--back">
                             <img
                                 class="card__back--image"
-                                src="img/croonus_academy_phone.png"
+                                src="../img/croonus_academy_phone.png"
                                 alt="Project screenshoot"
                             />
                             <a
@@ -193,7 +214,7 @@
                         <div class="card__side card__side--front">
                             <div class="card__picture--wrapper">
                                 <img
-                                    src="img/coming-soon.png"
+                                    src="../img/coming-soon.png"
                                     alt="Croonus Academy"
                                     class="card__picture"
                                 />
@@ -215,7 +236,7 @@
                         <div class="card__side card__side--front">
                             <div class="card__picture--wrapper">
                                 <img
-                                    src="img/coming-soon.png"
+                                    src="../img/coming-soon.png"
                                     alt="Croonus Academy"
                                     class="card__picture"
                                 />
@@ -234,10 +255,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="load_more">
-                    <a class="load_more--text">&lt; Load more &gt;</a>
+                <div class="load_more" data-aos="slide-up">
+                    <a class="load_more--text">
+                        &lt; Load more &gt;
+                    </a>
                 </div>
             </section>
         </main>
+        <!-- AOS - Animate on Scroll library -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800
+            });
+        </script>
     </body>
 </html>

@@ -59,6 +59,9 @@
 
     user-select: none;
 
+    animation: slide-left 0.8s backwards;
+    animation-delay: 1.5s;
+
     &--tab {
         &--1 {
             margin-left: 1rem;
