@@ -39,6 +39,9 @@
             opacity: 0.7;
             padding: 0.5rem;
 
+            animation: fade 0.8s ease backwards;
+            animation-delay: 1s;
+
             @media (min-width: 600px) {
                 font-size: 2rem;
             }
