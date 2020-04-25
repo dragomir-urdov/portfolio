@@ -9,11 +9,15 @@
     }
     &__header {
         @include shine(var(--color-blue));
-        margin: 2rem 0;
+        margin: 4rem 0 2rem;
         font-size: 4rem;
         letter-spacing: 1rem;
         text-transform: uppercase;
         text-align: center;
+
+        @media (min-width: 850px) {
+            margin: 2rem 0;
+        }
     }
 
     &__category {
@@ -36,7 +40,7 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(2, auto);
-                gap: 2rem;
+                gap: 1rem;
                 align-items: center;
             }
             &--web {
@@ -45,6 +49,7 @@
                 h2 {
                     grid-column: 2 / -1;
                     grid-row: 1 / span 1;
+                    align-self: end;
                 }
                 p {
                     grid-column: 2 / -1;
@@ -61,6 +66,7 @@
                 h2 {
                     grid-column: 1 / span 1;
                     grid-row: 1 / span 1;
+                    align-self: end;
                 }
                 p {
                     grid-column: 1 / span 1;
@@ -78,6 +84,10 @@
             letter-spacing: 5px;
             text-transform: uppercase;
             color: var(--color-blue);
+            margin: 3rem 0 0;
+            @media (min-width: 850px) {
+                margin: 0;
+            }
         }
         &--image {
             width: 100%;
