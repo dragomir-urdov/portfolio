@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
         <title>Dragomir Urdov</title>
 
         <!-- STYLE -->
-        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="/css/style.css" />
 
         <!-- FONT AWESOME -->
         <script
@@ -25,72 +25,14 @@
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
             rel="stylesheet"
         />
+
+        <!-- Shared Navigation -->
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="/js/nav.js"></script>
     </head>
     <body>
         <!-- NAVIGATION -->
-        <div class="navigation">
-            <a href="../index.html#home" class="logo">
-                <img src="../img/logo.png" alt="logo" />
-            </a>
-            <input
-                type="checkbox"
-                class="mobile__nav--checkbox"
-                id="mobile-nav"
-            />
-            <label for="mobile-nav" class="mobile__nav--button">
-                <span class="mobile__nav--icon"></span>
-            </label>
-            <nav class="nav">
-                <a href="../index.html#home" class="nav__link">
-                    <i class="fas fa-user-astronaut"></i>
-                    <span class="nav__link--text">About</span>
-                </a>
-                <a href="skills.html#skills" class="nav__link">
-                    <i class="fas fa-meteor"></i>
-                    <span class="nav__link--text">Skills</span>
-                </a>
-                <a
-                    href="../doc/cv_dragomir_urdov.docx"
-                    class="nav__link"
-                    download
-                >
-                    <i class="fas fa-file-alt"></i>
-                    <span class="nav__link--text">CV</span>
-                </a>
-                <a
-                    href="contact.html#contact"
-                    class="nav__link"
-                    title="Contact me"
-                >
-                    <i class="fas fa-envelope mail-close"></i>
-                    <i class="fas fa-envelope-open-text mail-open"></i>
-                    <span class="nav__link--text">Contact</span>
-                </a>
-            </nav>
-            <ul class="social-link">
-                <li class="social-link__item">
-                    <a
-                        href="https://www.instagram.com/dragomir.urdov/"
-                        target="_blank"
-                    >
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="social-link__item">
-                    <a href="https://github.com/dragomirurdov" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class="social-link__item">
-                    <a
-                        href="https://www.linkedin.com/in/dragomir-urdov-bb8570198/"
-                        target="_blank"
-                    >
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <div id="navigation-placeholder"></div>
 
         <!-- MAIN -->
         <main class="main">
@@ -103,7 +45,7 @@
                     >
                         <img
                             class="skills__category--image skills__category--image-general"
-                            src="../img/undraw_programming_2svr.svg"
+                            src="/img/undraw_programming_2svr.svg"
                             alt="Programming"
                         />
                         <p class="skills__category--paragraph">
@@ -124,7 +66,7 @@
                         </h2>
                         <img
                             class="skills__category--image skills__category--image-web"
-                            src="../img/undraw_web_developer_p3e5.svg"
+                            src="/img/undraw_web_developer_p3e5.svg"
                             alt="Web"
                             data-aos="fade-right"
                         />
@@ -147,7 +89,7 @@
                         </h2>
                         <img
                             class="skills__category--image skills__category--image-android"
-                            src="../img/undraw_Mobile_application_mr4r.svg"
+                            src="/img/undraw_Mobile_application_mr4r.svg"
                             alt="Mobile"
                             data-aos="fade-left"
                         />
@@ -183,7 +125,7 @@
                                 class="card__picture--wrapper  card__picture--croonus"
                             >
                                 <img
-                                    src="../img/croonus-academy.png"
+                                    src="/img/croonus-academy.png"
                                     alt="Croonus Academy"
                                     class="card__picture"
                                 />
@@ -199,7 +141,7 @@
                         <div class="card__side card__side--back">
                             <img
                                 class="card__back--image"
-                                src="../img/croonus_academy_phone.png"
+                                src="/img/croonus_academy_phone.png"
                                 alt="Project screenshoot"
                             />
                             <a
@@ -214,7 +156,7 @@
                         <div class="card__side card__side--front">
                             <div class="card__picture--wrapper">
                                 <img
-                                    src="../img/coming-soon.png"
+                                    src="/img/coming-soon.png"
                                     alt="Croonus Academy"
                                     class="card__picture"
                                 />
@@ -236,7 +178,7 @@
                         <div class="card__side card__side--front">
                             <div class="card__picture--wrapper">
                                 <img
-                                    src="../img/coming-soon.png"
+                                    src="/img/coming-soon.png"
                                     alt="Croonus Academy"
                                     class="card__picture"
                                 />

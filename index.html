@@ -7,11 +7,11 @@
         <meta name="description" content="Personal portfolio site" />
         <meta name="author" content="Dragomir Urdov" />
 
-        <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
         <title>Dragomir Urdov</title>
 
         <!-- STYLE -->
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="/css/style.css" />
 
         <!-- FONT AWESOME -->
         <script
@@ -27,72 +27,14 @@
 
         <!-- AOS - Animation on Scroll library -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- Shared Navigation -->
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="/js/nav.js"></script>
     </head>
     <body>
         <!-- NAVIGATION -->
-        <div class="navigation">
-            <a href="index.html#home" class="logo">
-                <img src="./img/logo.png" alt="logo" />
-            </a>
-            <input
-                type="checkbox"
-                class="mobile__nav--checkbox"
-                id="mobile-nav"
-            />
-            <label for="mobile-nav" class="mobile__nav--button">
-                <span class="mobile__nav--icon"></span>
-            </label>
-            <nav class="nav">
-                <a href="index.html#home" class="nav__link">
-                    <i class="fas fa-user-astronaut"></i>
-                    <span class="nav__link--text">About</span>
-                </a>
-                <a href="page/skills.html#skills" class="nav__link">
-                    <i class="fas fa-meteor"></i>
-                    <span class="nav__link--text">Skills</span>
-                </a>
-                <a
-                    href="/doc/cv_dragomir_urdov.docx"
-                    class="nav__link"
-                    download
-                >
-                    <i class="fas fa-file-alt"></i>
-                    <span class="nav__link--text">CV</span>
-                </a>
-                <a
-                    href="page/contact.html#contact"
-                    class="nav__link"
-                    title="Contact me"
-                >
-                    <i class="fas fa-envelope mail-close"></i>
-                    <i class="fas fa-envelope-open-text mail-open"></i>
-                    <span class="nav__link--text">Contact</span>
-                </a>
-            </nav>
-            <ul class="social-link">
-                <li class="social-link__item">
-                    <a
-                        href="https://www.instagram.com/dragomir.urdov/"
-                        target="_blank"
-                    >
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="social-link__item">
-                    <a href="https://github.com/dragomirurdov" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class="social-link__item">
-                    <a
-                        href="https://www.linkedin.com/in/dragomir-urdov-bb8570198/"
-                        target="_blank"
-                    >
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <div id="navigation-placeholder"></div>
 
         <!-- MAIN -->
         <main class="main">
@@ -123,7 +65,7 @@
                     <span class="code code--tab--2">&lt;/h2&gt;</span>
                     <span class="code code--tab--2">&lt;button&gt;</span>
                     <a
-                        href="page/contact.html#contact"
+                        href="/page/contact.html#contact"
                         class="home__button typing-button"
                     >
                         <p>Contact me</p>
@@ -141,10 +83,10 @@
                     <div class="about__content--image" data-aos="flip-left">
                         <img
                             srcset="
-                                ./img/profile-small.jpg 1x,
-                                ./img/profile.jpg       2x
+                                /img/profile-small.jpg 1x,
+                                /img/profile.jpg       2x
                             "
-                            src="./img/profile.jpg"
+                            src="/img/profile.jpg"
                             alt="Profile image"
                         />
                     </div>
