@@ -1,3 +1,3 @@
-$.get("./shared/navigation.html", function(data) {
+$.get("../shared/navigation.html", function(data) {
     $("#navigation-placeholder").replaceWith(data);
 });
