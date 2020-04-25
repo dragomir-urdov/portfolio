@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta name="description" content="Personal portfolio site" />
+        <meta name="author" content="Dragomir Urdov" />
+
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+        <title>Dragomir Urdov</title>
+
+        <!-- STYLE -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- FONT AWESOME -->
+        <script
+            src="https://kit.fontawesome.com/6f0929a9d6.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- FONTS -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2|Press+Start+2P&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- AOS - Animation on Scroll library -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- Shared Navigation -->
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="js/nav.js"></script>
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <div id="navigation-placeholder"></div>
+
+        <!-- MAIN -->
+        <main class="main">
+            <section class="home" id="home">
+                <div class="home__content content">
+                    <span class="code">&lt;html&gt;</span>
+                    <span class="code code--tab--1">&lt;head&gt;</span>
+                    <span class="code code--tab--2">&lt;title&gt;</span>
+                    <h3 class="home__header--h2">
+                        <span class="code">&lt;</span>
+                        Dragomir Urdov
+                        <span class="code">&gt;</span>
+                    </h3>
+                    <span class="code code--tab--2">&lt;/title&gt;</span>
+                    <span class="code code--tab--1">&lt;/head&gt;</span>
+                    <span class="code code--tab--1">&lt;body&gt;</span>
+                    <span class="code code--tab--2">&lt;h1&gt;</span>
+                    <h1 class="home__header--h1">
+                        Hi, I am Full-Stack Developer
+                    </h1>
+                    <span class="code code--tab--2">&lt;/h1&gt;</span>
+                    <span class="code code--tab--2">&lt;h2&gt;</span>
+                    <h2 class="home__header--h2">
+                        <span class="code">&lt;</span>
+                        and I can realise any your idea
+                        <span class="code">&gt;</span>
+                    </h2>
+                    <span class="code code--tab--2">&lt;/h2&gt;</span>
+                    <span class="code code--tab--2">&lt;button&gt;</span>
+                    <a
+                        href="page/contact.html#contact"
+                        class="home__button typing-button"
+                    >
+                        <p>Contact me</p>
+                    </a>
+                    <span class="code code--tab--2">&lt;/button&gt;</span>
+                    <span class="code code--tab--1">&lt;/body&gt;</span>
+                    <span class="code">&lt;/html&gt;</span>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="about__content content">
+                    <h1 class="about__content--header" data-aos="zoom-in-up">
+                        I am Dragomir Urdov
+                    </h1>
+                    <div class="about__content--image" data-aos="flip-left">
+                        <img
+                            srcset="
+                                img/profile-small.jpg 1x,
+                                img/profile.jpg       2x
+                            "
+                            src="img/profile.jpg"
+                            alt="Profile image"
+                        />
+                    </div>
+                    <h2
+                        class="about__content--subheader"
+                        data-aos="zoom-in-down"
+                    >
+                        Full-Stack Developer,<br />Android Developer,<br />Marathon
+                        Runner,<br />Hiker...
+                    </h2>
+                    <p class="about__content--paragraph">
+                        Hello! Welcome to my programming journey! I enjoy
+                        creating new things and I am always in search of new
+                        challenges. I am extremely interested in creating both
+                        web and mobile applications.
+                    </p>
+                    <a
+                        href="https://github.com/dragomirurdov?tab=repositories"
+                        class="about__content--link git__button"
+                        target="_blank"
+                    >
+                        See my Projects on GitHub
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- AOS - Animation on Scroll library -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800
+            });
+        </script>
+    </body>
+</html>
