@@ -6,20 +6,22 @@ const cssnano = require("gulp-cssnano");
 const autoprefixer = require("gulp-autoprefixer");
 
 function style() {
-    return gulp
-        .src("./sass/**/*.scss")
-        .pipe(sass().on("error", sass.logError))
-        .pipe(autoprefixer())
-        .pipe(cssnano())
-        .pipe(gulp.dest("./css"))
-        .pipe(browserSync.stream());
+    return (
+        gulp
+            .src("./sass/**/*.scss")
+            .pipe(sass().on("error", sass.logError))
+            .pipe(autoprefixer())
+            // .pipe(cssnano())
+            .pipe(gulp.dest("./css"))
+            .pipe(browserSync.stream())
+    );
 }
 
 function watch() {
     browserSync.init({
         server: {
-            baseDir: "./"
-        }
+            baseDir: "./",
+        },
     });
     gulp.watch("./sass/**/*.scss", style);
     gulp.watch("./*.html").on("change", browserSync.reload);

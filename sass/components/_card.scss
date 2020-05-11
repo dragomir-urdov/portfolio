@@ -62,7 +62,8 @@
     }
     &__picture {
         display: block;
-        width: 70%;
+        min-width: 30%;
+        max-width: 70%;
     }
 
     &__title {
