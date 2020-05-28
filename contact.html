@@ -1,180 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-        <title>Contact | Dragomir Urdov</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <title>Contact | Dragomir Urdov</title>
 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <!-- SHARE DESCRIPTION -->
-        <meta property="og:type" content="website" />
-        <meta
-            property="og:url"
-            content="https://dragomirurdov.github.io/portfolio/contact.html"
-        />
-        <meta property="og:title" content="Dragomir Urdov" />
-        <meta property="og:description" content="Personal portfolio site" />
+    <!-- SHARE DESCRIPTION -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://dragomirurdov.github.io/portfolio/contact.html"
+    />
+    <meta property="og:title" content="Dragomir Urdov" />
+    <meta property="og:description" content="Personal portfolio site" />
 
-        <!-- STYLE -->
-        <link rel="stylesheet" href="css/style.css" />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/style.css" />
 
-        <!-- FONT AWESOME -->
-        <script
-            src="https://kit.fontawesome.com/6f0929a9d6.js"
-            crossorigin="anonymous"
-        ></script>
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/6f0929a9d6.js"
+      crossorigin="anonymous"
+    ></script>
 
-        <!-- FONTS -->
-        <link
-            href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2|Press+Start+2P&display=swap"
-            rel="stylesheet"
-        />
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2|Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- AOS - Animation on Scroll library -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS - Animation on Scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-        <!-- Shared Navigation -->
-        <script src="//code.jquery.com/jquery.min.js"></script>
-        <script src="js/nav.js"></script>
-    </head>
-    <body>
-        <!-- NAVIGATION -->
-        <div id="navigation-placeholder"></div>
+    <!-- Shared Navigation -->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="js/nav.js"></script>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <div id="navigation-placeholder"></div>
 
-        <!-- MAIN -->
-        <main class="main">
-            <!-- CONTACT -->
-            <section class="contact">
-                <div class="contact__content content">
-                    <h1 class="contact__header" data-aos="fade">
-                        Contact me
-                    </h1>
-                    <p class="contact__paragraph" data-aos="fade">
-                        If You need a freelance programmer in your project or
-                        advice for the creation of the conceptual solution from
-                        scratch, feel free to contact me.
-                    </p>
-                    <form
-                        action="https://formspree.io/mlewqoyq"
-                        method="POST"
-                        class="contact__form"
-                        autocomplete="off"
-                        data-aos="zoom-in-down"
-                        data-aos-delay="500"
-                    >
-                        <ul class="contact__form--group">
-                            <li class="contact__form--group-name form__item">
-                                <input
-                                    type="text"
-                                    class="form__input"
-                                    id="name"
-                                    name="name"
-                                    placeholder="Name"
-                                    required
-                                />
-                                <label for="name" class="form__label">
-                                    Name:
-                                </label>
-                            </li>
-                            <li class="contact__form--group-email form__item">
-                                <input
-                                    type="email"
-                                    class="form__input"
-                                    id="email"
-                                    name="_replyto"
-                                    placeholder="Email"
-                                    required
-                                />
-                                <label for="email" class="form__label">
-                                    Email:
-                                </label>
-                            </li>
-                            <li class="contact__form--group-subject form__item">
-                                <input
-                                    type="text"
-                                    class="form__input"
-                                    id="subject"
-                                    name="_subject"
-                                    placeholder="Subject"
-                                />
-                                <label for="subject" class="form__label">
-                                    Subject:
-                                </label>
-                            </li>
-                            <li class="contact__form--group-message form__item">
-                                <textarea
-                                    class="form__input"
-                                    id="message"
-                                    name="message"
-                                    placeholder="Message"
-                                    required
-                                ></textarea>
-                                <label for="message" class="form__label">
-                                    Message:
-                                </label>
-                            </li>
-                            <li class="contact__form--group-submit form__item">
-                                <!-- if I have gold plan on formspree -->
-                                <input
-                                    type="hidden"
-                                    name="_next"
-                                    value="https://dragomirurdov.github.io/portfolio/mail.html/"
-                                />
-                            </li>
-                            <li class="contact__form--group-submit form__item">
-                                <input
-                                    class="send__button"
-                                    type="submit"
-                                    value="SEND"
-                                />
-                            </li>
-                        </ul>
-                    </form>
-                    <!-- MAP -->
-                    <div class="map" data-aos="zoom-in-up">
-                        <div class="map__canvas">
-                            <iframe
-                                width="100%"
-                                height="500"
-                                id="map__canvas"
-                                src="https://maps.google.com/maps?q=atrogasne%20cete&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0"
-                                scrolling="no"
-                                marginheight="0"
-                                marginwidth="0"
-                            ></iframe>
-                        </div>
-                        <div class="map__detail">
-                            <h1 class="map__detail--name">Dragomir Urdov</h1>
-                            <p class="map__detail--address">
-                                Vatrogasne čete 8 <br />
-                                36103 Kraljevo
-                            </p>
-                            <a
-                                class="map__detail--mail"
-                                href="mailto:dragomir.urdov@gmail.com"
-                            >
-                                dragomir.urdov@gmail.com
-                            </a>
-                            <a
-                                class="map__detail--phone"
-                                href="tel:+381644781140"
-                            >
-                                (+381)064/47-81-140
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- AOS - Animation on Scroll library -->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 800,
-            });
-        </script>
-    </body>
+    <!-- MAIN -->
+    <main class="main">
+      <!-- CONTACT -->
+      <section class="contact">
+        <div class="contact__content content">
+          <h1 class="contact__header" data-aos="fade">
+            Contact me
+          </h1>
+          <p class="contact__paragraph" data-aos="fade">
+            If You need a freelance programmer in your project or advice for the
+            creation of the conceptual solution from scratch, feel free to
+            contact me.
+          </p>
+          <form
+            action="https://formspree.io/mlewqoyq"
+            method="POST"
+            class="contact__form"
+            autocomplete="off"
+            data-aos="zoom-in-down"
+            data-aos-delay="500"
+          >
+            <ul class="contact__form--group">
+              <li class="contact__form--group-name form__item">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+                <label for="name" class="form__label">
+                  Name:
+                </label>
+              </li>
+              <li class="contact__form--group-email form__item">
+                <input
+                  type="email"
+                  class="form__input"
+                  id="email"
+                  name="_replyto"
+                  placeholder="Email"
+                  required
+                />
+                <label for="email" class="form__label">
+                  Email:
+                </label>
+              </li>
+              <li class="contact__form--group-subject form__item">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="subject"
+                  name="_subject"
+                  placeholder="Subject"
+                />
+                <label for="subject" class="form__label">
+                  Subject:
+                </label>
+              </li>
+              <li class="contact__form--group-message form__item">
+                <textarea
+                  class="form__input"
+                  id="message"
+                  name="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <label for="message" class="form__label">
+                  Message:
+                </label>
+              </li>
+              <li class="contact__form--group-submit form__item">
+                <!-- if I have gold plan on formspree -->
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://dragomirurdov.github.io/portfolio/mail.html/"
+                />
+              </li>
+              <li class="contact__form--group-submit form__item">
+                <input class="send__button" type="submit" value="SEND" />
+              </li>
+            </ul>
+          </form>
+          <!-- MAP -->
+          <div class="map" data-aos="zoom-in-up">
+            <div class="map__canvas">
+              <iframe
+                width="100%"
+                height="500"
+                id="map__canvas"
+                src="https://maps.google.com/maps?q=atrogasne%20cete&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
+            </div>
+            <div class="map__detail">
+              <h1 class="map__detail--name">Dragomir Urdov</h1>
+              <p class="map__detail--address">
+                Vatrogasne čete 8 <br />
+                36103 Kraljevo
+              </p>
+              <a
+                class="map__detail--mail"
+                href="mailto:dragomir.urdov@gmail.com"
+              >
+                dragomir.urdov@gmail.com
+              </a>
+              <a class="map__detail--phone" href="tel:+381644781140">
+                (+381)064/47-81-140
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- AOS - Animation on Scroll library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+      });
+    </script>
+  </body>
 </html>
